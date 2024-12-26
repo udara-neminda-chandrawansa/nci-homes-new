@@ -1,45 +1,70 @@
 //import Button from "./Button";
 import CardType1 from "./CardType1";
-import card_1 from "../images/landing/Untitled-design-1.png";
-import card_2 from "../images/landing/Untitled-design-2.png";
-import card_3 from "../images/landing/Untitled-design-3.png";
+import card_1 from "../images/services/card_1.png";
+import card_2 from "../images/services/card_2.png";
+import card_3 from "../images/services/card_3.png";
+import card_4 from "../images/services/card_4.png";
 
 function HomeSection1() {
   return (
     <div className="h-[100dvh] flex flex-col items-start py-12 px-3 gap-6 max-[600px]:h-full">
       <span className="flex items-center gap-5 text-xs tracking-widest text-gray-600 uppercase g-font-2">
-        New
+        Services
         <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
       </span>
       <span className="w-full cursor-grab overflow-x-scroll no-scrollbar max-[600px]:h-fit">
-        <span className="w-fit flex overflow-x-hidden gap-3 max-[600px]:flex-col max-[600px]:h-full">
+        <span className="grid grid-cols-4 gap-3 max-[600px]:grid-cols-2 max-[600px]:h-full">
           <CardType1
-            cardHeader={"Communities 360° Tour"}
-            cardHeaderClasses={"text-4xl max-xl:text-3xl max-lg:text-3xl max-md:text-xl max-sm:text-lg"}
+            cardHeader={"Floor area counting"}
+            cardHeaderClasses={
+              "text-4xl max-xl:text-3xl max-lg:text-3xl max-md:text-xl max-sm:text-lg"
+            }
             cardText1={
-              "Experience NCI Homes communities and ammenities from the comfort of your home."
+              "Precise calculations for your property's floor area, ensuring accurate utilization and planning of every square foot."
             }
             cardImage={card_1}
-            extraClasses={"h-[70dvh] w-[400px] max-[600px]:w-full"}
-            btnText={"Try It Now"}
-          />
-          <CardType1
-            cardHeader={"Intenational Projects"}
-            cardHeaderClasses={"text-4xl max-xl:text-3xl max-lg:text-3xl max-md:text-xl max-sm:text-lg"}
-            cardText1={"Explore our portfolio of international projects."}
-            cardImage={card_2}
-            extraClasses={"h-[70dvh] w-[400px] max-[600px]:w-full"}
+            extraClasses={"h-[70dvh] "}
             btnText={"Read More"}
+            url="/services"
           />
           <CardType1
-            cardHeader={"Discover our Blogs"}
-            cardHeaderClasses={"text-4xl max-xl:text-3xl max-lg:text-3xl max-md:text-xl max-sm:text-lg"}
+            cardHeader={"special loan facilities"}
+            cardHeaderClasses={
+              "text-4xl max-xl:text-3xl max-lg:text-3xl max-md:text-xl max-sm:text-lg"
+            }
             cardText1={
-              "Click to read our top tips and tricks for property management, home decoration and more."
+              "Tailored loan options to make your dream home affordable and within reach with ease."
+            }
+            cardImage={card_2}
+            extraClasses={"h-[70dvh]"}
+            btnText={"Read More"}
+            url="/services"
+          />
+          <CardType1
+            cardHeader={"Planning approvals"}
+            cardHeaderClasses={
+              "text-4xl max-xl:text-3xl max-lg:text-3xl max-md:text-xl max-sm:text-lg"
+            }
+            cardText1={
+              "Hassle-free assistance in securing necessary approvals to streamline your construction and renovation projects."
             }
             cardImage={card_3}
-            extraClasses={"h-[70dvh] w-[400px] max-[600px]:w-full"}
+            extraClasses={"h-[70dvh] "}
             btnText={"Read More"}
+            url="/services"
+          />
+          <CardType1
+            cardHeader={"Landscaping with new and old designs"}
+            cardHeaderClasses={
+              "text-4xl max-xl:text-3xl max-lg:text-3xl max-md:text-xl max-sm:text-lg"
+            }
+            cardText1={
+              "Transform your outdoor spaces with innovative designs or refreshing existing landscapes for a stunning environment."
+            }
+            cardImage={card_4}
+            extraClasses={"h-[70dvh]"}
+            btnText={"Read More"}
+            url="/services"
           />
         </span>
       </span>

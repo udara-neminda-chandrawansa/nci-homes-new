@@ -10,15 +10,16 @@ function CardType1({
   cardImage,
   cardImageClasses,
   btnText,
+  url,
   extraClasses,
 }) {
   return (
     <div
       className={`flex flex-col items-center justify-between ${extraClasses}`}
     >
-      <span className="h-1/2 overflow-hidden w-full group">
+      <span className="w-full overflow-hidden h-1/2 group">
         <img
-          className={`w-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110 ${cardImageClasses}`}
+          className={`w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110 ${cardImageClasses}`}
           src={cardImage}
           alt={cardHeader}
         ></img>
@@ -39,6 +40,7 @@ function CardType1({
           displayText={btnText}
           theme={"dark"}
           extraClasses={"w-[200px]"}
+          url={url}
         />
       ) : (
         ""
