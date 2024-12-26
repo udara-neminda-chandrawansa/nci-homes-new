@@ -44,9 +44,9 @@ function Footer() {
   };
 
   return (
-    <div className="h-fit bg-gray-50 flex flex-col gap-14 pt-12 mt-12 px-4 max-[992px]:gap-0">
+    <div className="flex flex-col px-4 pt-12 mt-12 h-fit bg-gray-50 gap-14 max-md:gap-6 max-sm:gap-3">
       {/*logo & shit*/}
-      <div className="flex h-[50px] max-[992px]:flex-col">
+      <div className="flex max-[992px]:flex-col">
         {/*logo + social*/}
         <div className="flex w-3/5 max-[992px]:w-full">
           <div className="flex w-1/2 max-[992px]:w-full">
@@ -240,8 +240,11 @@ function Footer() {
       {/*row 4*/}
       <div className="flex bg-white h-fit">
         <ul className="flex px-4 py-5 max-[992px]:px-0 justify-center gap-6 w-full uppercase g-font-1 tracking-widest text-xs max-md:flex-col max-md:px-4 max-md:pb-8 max-[992px]:w-full">
-          <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
+        <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
             all rights reserved
+          </li>
+          <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none hover:text-blue-300 delay-75 transition-all w-fit">
+            NCI Homes
           </li>
           <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none hover:text-blue-300 delay-75 transition-all w-fit">
             designed & developed by Silicon Radon Networks (Pvt) Ltd
