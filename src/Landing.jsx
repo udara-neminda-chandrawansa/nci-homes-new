@@ -39,7 +39,7 @@ export default function Landing() {
         headerIconColor="pink"
         headerTxtColor="white"
         headerBgColor="#006064"
-        headerTitle="Royal Havenwood"
+        headerTitle="NCI Homes"
         headerCaption="Online"
         bodyBgColor="#bbb"
         chatPersonName="Support"

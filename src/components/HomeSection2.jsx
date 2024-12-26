@@ -20,7 +20,7 @@ function HomeSection2() {
           Architecture And Decor
         </h1>
         <p className="text-lg text-gray-600 g-font-1">
-          At Royal Havenwood, we blend modern and classic architecture to create
+          At NCI Homes, we blend modern and classic architecture to create
           stunning, durable properties. Our interiors are designed with stylish
           furniture, soothing colors, and elegant decor, ensuring every space is
           both inviting and luxurious.

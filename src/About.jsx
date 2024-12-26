@@ -93,7 +93,7 @@ export default function About() {
                   <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
                 </span>
                 <h1 className="text-5xl uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
-                  About Royal Havenwood Properties
+                  About NCI Homes Properties
                 </h1>
                 <p className="py-4 text-lg g-font-1 max-sm:text-sm">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -149,10 +149,10 @@ export default function About() {
         <div className="w-full h-fit flex items-center p-4 gap-3 max-[992px]:flex-col">
           <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] w-1/3 max-[992px]:w-full">
             <h1 className="text-2xl uppercase max-xl:text-xl max-lg:text-lg">
-              Royal Havenwood PROPERTIES BOARD OF DIRECTORS
+              NCI Homes PROPERTIES BOARD OF DIRECTORS
             </h1>
             <p className="text-xl g-font-1 max-xl:text-lg">
-              Royal Havenwood's leadership team is comprised of the industry's
+              NCI Homes's leadership team is comprised of the industry's
               most experienced leaders, who have secured our place as one of the
               world's greatest real estate and lifestyle developers.
             </p>
@@ -165,12 +165,12 @@ export default function About() {
           </div>
           <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] w-1/3 max-[992px]:w-full">
             <h1 className="text-2xl uppercase max-xl:text-xl max-lg:text-lg">
-              Royal Havenwood DEVELOPMENT BOARD OF DIRECTORS
+              NCI Homes DEVELOPMENT BOARD OF DIRECTORS
             </h1>
             <p className="text-xl g-font-1 max-xl:text-lg">
               With their combined wisdom and innovative approach, Royal
               Havenwood Development's leadership has been essential in
-              establishing Royal Havenwood as a top-tier real estate and
+              establishing NCI Homes as a top-tier real estate and
               lifestyle developer.
             </p>
             <Button
@@ -185,7 +185,7 @@ export default function About() {
               PRINCIPAL OFFICERS
             </h1>
             <p className="text-xl g-font-1 max-xl:text-lg">
-              Royal Havenwood has built a team of motivated officers, united in
+              NCI Homes has built a team of motivated officers, united in
               their commitment to excellence. This dedication stands strong,
               even amidst our many achievements and accolades, ensuring a
               constant drive for improvement.
@@ -213,7 +213,7 @@ export default function About() {
           <p className="text-lg text-gray-600 g-font-1">
             Our properties each have their own unique design aesthetic,
             providing an aspirational lifestyle within a thriving community,
-            supported by Royal Havenwood’s community management team.
+            supported by NCI Homes’s community management team.
           </p>
           <span className="w-full max-[992px]:hidden">
             <Button
@@ -278,7 +278,7 @@ export default function About() {
           />
         </span>
       </div>
-      {/*other Royal Havenwood businesses*/}
+      {/*other NCI Homes businesses*/}
       <div className="flex items-center justify-center px-3 py-12 h-fit max-lg:h-fit">
         <div className="flex flex-col w-full gap-3">
           <span className="flex items-center gap-5 text-xs tracking-widest text-gray-600 uppercase g-font-2">
@@ -287,13 +287,13 @@ export default function About() {
           </span>
           <span className="flex items-center justify-between">
             <h1 className="text-5xl leading-snug uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
-              OTHER Royal Havenwood BUSINESSES
+              OTHER NCI Homes BUSINESSES
             </h1>
           </span>
           <div className="select-none">
             <span className="flex justify-between w-full gap-3 py-3 max-md:flex-col">
               <CardType1
-                cardHeader={"Royal Havenwood HOSPITALITY"}
+                cardHeader={"NCI Homes HOSPITALITY"}
                 cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
                 cardImage={
                   "https://cdn.properties.emaar.com/wp-content/uploads/2020/06/emaar-hospitality-320x415.jpg"
@@ -303,7 +303,7 @@ export default function About() {
                 extraClasses={"w-[300px] h-fit py-1 gap-3 max-md:w-full"}
               />
               <CardType1
-                cardHeader={"Royal Havenwood MALLS"}
+                cardHeader={"NCI Homes MALLS"}
                 cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
                 cardImage={
                   "https://cdn.properties.emaar.com/wp-content/uploads/2020/06/emaar-malls-320x415.jpg"
@@ -321,7 +321,7 @@ export default function About() {
                 extraClasses={"w-[300px] h-fit py-1 gap-3 max-md:w-full"}
               />
               <CardType1
-                cardHeader={"Royal Havenwood ENTERTAINMENT"}
+                cardHeader={"NCI Homes ENTERTAINMENT"}
                 cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
                 cardImage={
                   "https://cdn.properties.emaar.com/wp-content/uploads/2020/06/emaar-entertainment-320x415.jpg"
@@ -339,7 +339,7 @@ export default function About() {
         <CardType3
           titleText={"INVESTOR RELATIONS"}
           contentText={
-            "Royal Havenwood is a Public Joint Stock Company listed on the Colombo Financial Market. View Royal Havenwood’s stock market trends and related data."
+            "NCI Homes is a Public Joint Stock Company listed on the Colombo Financial Market. View NCI Homes’s stock market trends and related data."
           }
           imgSrc={
             "https://cdn.properties.emaar.com/wp-content/uploads/2020/06/investor-relations-440x280.png"
@@ -357,9 +357,9 @@ export default function About() {
           extraClasses={"h-[500px] justify-between"}
         />
         <CardType3
-          titleText={"Royal Havenwood FOUNDATION"}
+          titleText={"NCI Homes FOUNDATION"}
           contentText={
-            "The Royal Havenwood Foundation, a part of Royal Havenwood Properties, focuses on driving and coordinating the group's corporate social responsibility efforts."
+            "The NCI Homes Foundation, a part of NCI Homes Properties, focuses on driving and coordinating the group's corporate social responsibility efforts."
           }
           imgSrc={
             "https://cdn.properties.emaar.com/wp-content/uploads/2020/06/emaar-foundation-440x280.png"

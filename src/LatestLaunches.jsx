@@ -118,9 +118,9 @@ export default function LatestLaunches() {
               <p className="uppercase px-8 py-1 border-[1px] text-blue-900 border-solid border-gray-400 w-fit text-sm">
                 Coming Soon
               </p>
-              <h1 className="text-3xl font-semibold uppercase">Royal Havenwood South</h1>
+              <h1 className="text-3xl font-semibold uppercase">NCI Homes South</h1>
               <p className="w-full g-font-1">
-                Royal Havenwood South's newest townhouses that blend local charm with global
+                NCI Homes South's newest townhouses that blend local charm with global
                 outlook.
               </p>
               <Button
@@ -267,7 +267,7 @@ export default function LatestLaunches() {
                 Now Available
               </p>
               <h1 className="text-3xl font-semibold uppercase">
-                GREENVILLE AT Royal Havenwood SOUTH
+                GREENVILLE AT NCI Homes SOUTH
               </h1>
               <span>
                 <p className="w-full g-font-1">
@@ -538,11 +538,11 @@ export default function LatestLaunches() {
                 Now Available
               </p>
               <h1 className="text-3xl font-semibold uppercase">
-                GREENRIDGE AT Royal Havenwood SOUTH
+                GREENRIDGE AT NCI Homes SOUTH
               </h1>
               <span>
                 <p className="w-full g-font-1">
-                  Welcome to Greenridge at Royal Havenwood South, a serene oasis designed
+                  Welcome to Greenridge at NCI Homes South, a serene oasis designed
                   for families to flourish.
                 </p>
                 <a
@@ -700,13 +700,13 @@ export default function LatestLaunches() {
                 Now Available
               </p>
               <h1 className="text-3xl font-semibold uppercase">
-                GOLF POINT AT Royal Havenwood SOUTH
+                GOLF POINT AT NCI Homes SOUTH
               </h1>
               <span>
                 <p className="w-full g-font-1">
                   Welcome to Golf Point, a charming midrise residential
-                  community in Royal Havenwood South, offering breathtaking views of the
-                  lush green hills of the Royal Havenwood South Golf Course.
+                  community in NCI Homes South, offering breathtaking views of the
+                  lush green hills of the NCI Homes South Golf Course.
                 </p>
                 <a
                   href="https://www.google.com"
@@ -1622,7 +1622,7 @@ export default function LatestLaunches() {
                 Now Available
               </p>
               <h1 className="text-3xl font-semibold uppercase">
-                BAYVIEW BY ADDRESS RESORTS AT Royal Havenwood BEACHFRONT
+                BAYVIEW BY ADDRESS RESORTS AT NCI Homes BEACHFRONT
               </h1>
               <span>
                 <p className="w-full g-font-1">

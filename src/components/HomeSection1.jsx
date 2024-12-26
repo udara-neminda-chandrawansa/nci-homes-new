@@ -17,7 +17,7 @@ function HomeSection1() {
             cardHeader={"Communities 360° Tour"}
             cardHeaderClasses={"text-4xl max-xl:text-3xl max-lg:text-3xl max-md:text-xl max-sm:text-lg"}
             cardText1={
-              "Experience Royal Havenwood communities and ammenities from the comfort of your home."
+              "Experience NCI Homes communities and ammenities from the comfort of your home."
             }
             cardImage={card_1}
             extraClasses={"h-[70dvh] w-[400px] max-[600px]:w-full"}
