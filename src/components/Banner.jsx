@@ -1,6 +1,4 @@
 import { useEffect, useCallback } from "react";
-import { Checkbox, Field, Label } from "@headlessui/react";
-import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import React, { useState } from "react";
 import Button from "./Button";
 import Nav from "./Nav";
