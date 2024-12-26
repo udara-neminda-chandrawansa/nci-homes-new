@@ -1,4 +1,7 @@
 import React from "react";
+
+import { Link } from "wouter";
+
 import p_1 from "./../images/partners/1.png";
 import p_2 from "./../images/partners/2.png";
 import p_3 from "./../images/partners/3.png";
@@ -10,37 +13,91 @@ import p_8 from "./../images/partners/8.png";
 import p_9 from "./../images/partners/9.png";
 import p_10 from "./../images/partners/10.png";
 
+const clients = [
+  {
+    name: "partner 1",
+    logo: p_1,
+  },
+  {
+    name: "partner 2",
+    logo: p_2,
+  },
+  {
+    name: "partner 3",
+    logo: p_3,
+  },
+  {
+    name: "partner 4",
+    logo: p_4,
+  },
+  {
+    name: "partner 5",
+    logo: p_5,
+  },
+  {
+    name: "partner 6",
+    logo: p_6,
+  },
+  {
+    name: "partner 7",
+    logo: p_7,
+  },
+  {
+    name: "partner 8",
+    logo: p_8,
+  },
+  {
+    name: "partner 9",
+    logo: p_9,
+  },
+  {
+    name: "partner 10",
+    logo: p_10,
+  },
+];
+
 const PartnersCar = () => {
   return (
-    <div>
-      <div className="relative flex overflow-x-hidden">
-        <div className="flex items-center justify-between gap-6 py-12 animate-marquee whitespace-nowrap">
-          <img src={p_1} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_2} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_3} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_4} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_5} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_6} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_7} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_8} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_9} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_10} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-        </div>
-
-        <div className="absolute top-0 flex items-center justify-between gap-6 py-12 animate-marquee2 whitespace-nowrap">
-          <img src={p_1} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_2} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_3} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_4} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_5} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_6} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_7} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_8} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_9} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
-          <img src={p_10} alt="partner-image" className="w-[100px] h-[100px] object-contain"/>
+    <>
+      <div className="py-8 overflow-hidden">
+        <div className="flex gap-8 animate-left w-max">
+          <div className="flex gap-8 w-max">
+            {clients.map((client, index) => (
+              <Link
+                key={index}
+                href="#"
+                className="flex justify-center items-center p-6 w-[10rem] "
+              >
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  width={100}
+                  height={100}
+                  className="object-contain w-full h-full"
+                />
+              </Link>
+            ))}
+          </div>
+          <div className="flex gap-8 w-max">
+            {clients.map((client, index) => (
+              <Link
+                key={index}
+                href="#"
+                className="flex justify-center items-center p-6 w-[10rem] "
+              >
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  width={100}
+                  height={100}
+                  className="object-contain w-full h-full"
+                />
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
