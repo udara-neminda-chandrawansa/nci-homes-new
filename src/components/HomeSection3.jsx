@@ -33,7 +33,7 @@ function HomeSection3() {
     });
   };
   return (
-    <div className="h-[100dvh] flex items-center justify-center px-3 py-12 max-lg:h-fit">
+    <div className="flex items-center justify-center px-3 py-12">
       <div className="flex flex-col w-full gap-3">
         <span className="flex items-center gap-5 text-xs tracking-widest text-gray-600 uppercase g-font-2">
           Projects

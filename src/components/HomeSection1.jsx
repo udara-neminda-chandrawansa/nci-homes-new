@@ -7,13 +7,13 @@ import card_4 from "../images/services/card_4.png";
 
 function HomeSection1() {
   return (
-    <div className="h-[100dvh] flex flex-col items-start py-12 px-3 gap-6 max-[600px]:h-full">
+    <div className="flex flex-col items-start gap-6 px-3 py-12">
       <span className="flex items-center gap-5 text-xs tracking-widest text-gray-600 uppercase g-font-2">
         Services
         <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
       </span>
-      <span className="w-full cursor-grab overflow-x-scroll no-scrollbar max-[600px]:h-fit">
-        <span className="grid grid-cols-4 gap-3 max-[600px]:grid-cols-2 max-[600px]:h-full">
+      <span className="w-full overflow-x-scroll cursor-grab no-scrollbar">
+        <span className="grid grid-cols-4 gap-3 max-lg:grid-cols-2 max-md:grid-cols-1">
           <CardType1
             cardHeader={"Floor area counting"}
             cardHeaderClasses={
