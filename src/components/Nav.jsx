@@ -16,7 +16,7 @@ export default function Nav({
   return (
     <nav className={`flex justify-between px-6 py-1 z-10 w-full bg-${bgColor}`}>
       {/*left side*/}
-      <span className="flex">
+      <span className="flex justify-between max-sm:w-full">
         <span className="hidden max-lg:flex">
           <Button
             displayText={
@@ -55,7 +55,7 @@ export default function Nav({
           <li>
             <Link href="/latest">
               <p className="p-1 underline-offset-[20px] hover:underline">
-                Latest Launches
+                Projects
               </p>{" "}
             </Link>
           </li>

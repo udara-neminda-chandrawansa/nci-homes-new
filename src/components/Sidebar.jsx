@@ -18,7 +18,7 @@ export default function Sidebar() {
         <li>
           <Link href="/latest">
             <p className="p-1 border-t-[1px] border-t-gray-300 flex">
-              Latest Launches
+              Projects
             </p>
           </Link>
         </li>

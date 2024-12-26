@@ -68,7 +68,7 @@ export default function LatestLaunches() {
           </div>
           {/*title + text + filter btns*/}
           <div className="flex flex-col gap-10 p-4 py-16">
-            <h1 className="text-5xl uppercase">Latest Launches</h1>
+            <h1 className="text-5xl uppercase">Projects</h1>
             <p className="text-lg g-font-1">
               Welcome to a showcase of exceptional real estate opportunities. In
               this section, journey through innovative upcoming projects,
