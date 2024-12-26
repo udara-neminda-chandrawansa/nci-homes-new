@@ -1,3 +1,5 @@
+import { Link } from "wouter";
+
 function Button({
   displayText,
   url,
@@ -35,12 +37,12 @@ function Button({
       className={`p-[1px] ${buttonBgColor} w-${width} ${extraClasses4Button}`}
       onClick={onClick}
     >
-      <a
+      <Link
         href={url}
         className={`uppercase tracking-widest border-solid border ${buttonBorderColor} ${buttonTextColor} w-${width} text-sm max-sm:text-xs ${noPadding ? "p-0" : "p-4"} g-font-3 inline-block ${extraClasses}`}
       >
         {displayText}
-      </a>
+      </Link>
     </button>
   );
 }
