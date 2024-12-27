@@ -172,46 +172,31 @@ function Footer() {
           >
             <ul className="flex flex-col justify-between gap-4 w-1/4 uppercase g-font-1 tracking-widest text-xs pt-3 max-[992px]:w-full">
               <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
-                <Link href="/">
-                  Home
-                </Link>
+                <Link href="/">Home</Link>
               </li>
               <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
                 <Link href="/about">About</Link>
               </li>
-              
             </ul>
             <ul className="flex flex-col px-4 max-[992px]:px-0 justify-between gap-4 w-1/4 uppercase g-font-1 tracking-widest text-xs pt-3 max-[992px]:w-full">
               <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
-                <Link href="/services">
-                  Services
-                </Link>
+                <Link href="/services">Services</Link>
               </li>
               <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
-                <Link href="/designs">
-                  Designs
-                </Link>
+                <Link href="/designs">Designs</Link>
               </li>
-              
             </ul>
             <ul className="flex flex-col px-4 max-[992px]:px-0 justify-between gap-4 w-1/4 uppercase g-font-1 tracking-widest text-xs pt-3 max-[992px]:w-full">
               <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
-                <Link href="/projects">
-                  Completed Projects
-                </Link>
+                <Link href="/projects">Completed Projects</Link>
               </li>
               <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
-                <Link href="/projects">
-                  Ongoing Projects
-                </Link>
+                <Link href="/projects">Ongoing Projects</Link>
               </li>
-              
             </ul>
             <ul className="flex flex-col px-4 max-[992px]:px-0 justify-between gap-4 w-1/4 uppercase g-font-1 tracking-widest text-xs pt-3 max-[992px]:w-full">
               <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
-                <Link href="/contact">
-                  Contact Us
-                </Link>
+                <Link href="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -220,11 +205,11 @@ function Footer() {
       {/*row 4*/}
       <div className="flex bg-white h-fit">
         <ul className="flex px-4 py-5 max-[992px]:px-0 justify-center gap-6 w-full uppercase g-font-1 tracking-widest text-xs max-md:flex-col max-md:px-4 max-md:pb-8 max-[992px]:w-full">
-        <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
-            all rights reserved
+          <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
+            2024 © all rights reserved
           </li>
           <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none hover:text-blue-300 delay-75 transition-all w-fit">
-            NCI Homes
+            NCI Homes (Pvt) Ltd
           </li>
           <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none hover:text-blue-300 delay-75 transition-all w-fit">
             designed & developed by Silicon Radon Networks (Pvt) Ltd
