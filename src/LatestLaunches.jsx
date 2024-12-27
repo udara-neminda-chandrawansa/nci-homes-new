@@ -1,7 +1,41 @@
+import { useState } from "react";
+
 import Button from "./components/Button";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Sidebar from "./components/Sidebar";
+
+import haragama_housing from "./images/projects/completed/haragama_housing.jpg";
+
+import hara_hou_1 from "./images/projects/completed/haragama_housing/1.jpg";
+import hara_hou_2 from "./images/projects/completed/haragama_housing/2.jpg";
+import hara_hou_3 from "./images/projects/completed/haragama_housing/3.jpg";
+import hara_hou_4 from "./images/projects/completed/haragama_housing/4.jpg";
+import hara_hou_5 from "./images/projects/completed/haragama_housing/5.jpg";
+import hara_hou_6 from "./images/projects/completed/haragama_housing/6.jpg";
+import hara_hou_7 from "./images/projects/completed/haragama_housing/7.jpg";
+import hara_hou_8 from "./images/projects/completed/haragama_housing/8.jpg";
+import hara_hou_9 from "./images/projects/completed/haragama_housing/9.jpg";
+import hara_hou_10 from "./images/projects/completed/haragama_housing/10.jpg";
+import hara_hou_11 from "./images/projects/completed/haragama_housing/11.jpg";
+import hara_hou_12 from "./images/projects/completed/haragama_housing/12.jpg";
+import hara_hou_13 from "./images/projects/completed/haragama_housing/13.jpg";
+
+const hara_hou_grid = [
+  hara_hou_1,
+  hara_hou_2,
+  hara_hou_3,
+  hara_hou_4,
+  hara_hou_5,
+  hara_hou_6,
+  hara_hou_7,
+  hara_hou_8,
+  hara_hou_9,
+  hara_hou_10,
+  hara_hou_11,
+  hara_hou_12,
+  hara_hou_13,
+];
 
 export default function Projects() {
   const handleLaunchFilter = (Filter) => {
@@ -56,6 +90,11 @@ export default function Projects() {
         break;
     }
   };
+  const [selectedProject, setSelectedProject] = useState(0);
+
+  const completedProjects = [
+    ["Haragama Housing Project", haragama_housing, "Project Description"],
+  ];
 
   return (
     <>
@@ -78,7 +117,7 @@ export default function Projects() {
               exceptional craftsmanship and tailored solutions to meet our
               clients' unique needs.
             </p>
-
+            {/*all, completed, ongoing buttons*/}
             <div className="inline-flex gap-6 max-sm:flex-col">
               <span
                 id="launchSpan-1"
@@ -107,37 +146,43 @@ export default function Projects() {
       </div>
       {/*card container*/}
       <div className="flex flex-col w-full gap-12 px-4 max-lg:h-full">
-        {/*completed*/}
-        <div className="unit-card coming-soon w-full h-[320px] flex gap-4 max-md:flex-col max-md:h-fit">
-          <div className="w-1/2 max-md:w-full max-md:h-1/2">
-            <img
-              src="https://cdn.properties.emaar.com/wp-content/uploads/2020/03/ES_View_13-706x385.jpg"
-              alt="img"
-              className="object-cover w-full h-full"
-            ></img>
-          </div>
-          <div className="flex flex-col justify-center w-1/2 max-md:w-full max-md:h-1/2">
-            <div className="flex flex-col justify-between pl-12 h-4/5 max-md:pl-0 max-md:gap-5">
-              <p className="uppercase px-8 py-1 border-[1px] text-blue-900 border-solid border-gray-400 w-fit text-sm">
-                Completed Projects
-              </p>
-              <h1 className="text-3xl font-semibold uppercase">
-                NCI Homes South
-              </h1>
-              <p className="w-full g-font-1">
-                NCI Homes South's newest townhouses that blend local charm with
-                global outlook.
-              </p>
-              <Button
-                displayText={"View More Details"}
-                theme={"dark"}
-                extraClasses={"text-xs"}
-                width={"fit"}
-              ></Button>
+        {/*completed map*/}
+        {completedProjects.map((project, index) => (
+          <div
+            key={index}
+            className="unit-card coming-soon w-full h-[320px] flex gap-4 max-md:flex-col max-md:h-fit"
+          >
+            <div className="w-1/2 max-md:w-full max-md:h-1/2">
+              <img
+                src={project[1]}
+                alt="img"
+                className="object-cover w-full h-full"
+              ></img>
+            </div>
+            <div className="flex flex-col justify-center w-1/2 max-md:w-full max-md:h-1/2">
+              <div className="flex flex-col justify-between pl-12 h-4/5 max-md:pl-0 max-md:gap-5">
+                <p className="uppercase px-8 py-1 border-[1px] text-blue-900 border-solid border-gray-400 w-fit text-sm">
+                  Completed Projects
+                </p>
+                <h1 className="text-3xl font-semibold uppercase">
+                  {project[0]}
+                </h1>
+                <p className="w-full g-font-1">{project[2]}</p>
+                <Button
+                  displayText={"View More Details"}
+                  theme={"dark"}
+                  extraClasses={"text-xs"}
+                  onClick={() => {
+                    setSelectedProject(index);
+                    document.getElementById("my_modal_3").showModal();
+                  }}
+                  width={"fit"}
+                ></Button>
+              </div>
             </div>
           </div>
-        </div>
-        {/*ongoing*/}
+        ))}
+        {/*ongoing map needed!!*/}
         <div className="unit-card now-available w-full h-[320px] flex gap-4 max-md:flex-col max-lg:h-fit">
           <div className="w-1/2 max-md:w-full max-md:h-1/2">
             <img
@@ -166,9 +211,10 @@ export default function Projects() {
                   theme={"dark"}
                   extraClasses={"text-xs"}
                   width={"fit"}
-                  onClick={() =>
-                    document.getElementById("my_modal_3").showModal()
-                  }
+                  onClick={() => {
+                    setSelectedProject(1);
+                    document.getElementById("my_modal_3").showModal();
+                  }}
                 ></Button>
               </span>
             </div>
@@ -177,15 +223,20 @@ export default function Projects() {
         <Footer></Footer>
         {/*image modal*/}
         <dialog id="my_modal_3" className="modal">
-          <div className="modal-box">
+          <div className="modal-box w-11/12 max-w-5xl">
             <form method="dialog">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
               </button>
             </form>
-            <h3 className="font-bold text-lg">Hello!</h3>
-            <p className="py-4">Press ESC key or click on ✕ button to close</p>
+            <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6">
+              {selectedProject === 0
+                ? hara_hou_grid.map((image, index) => (
+                    <img key={index} src={image} className="h-[300px] w-full object-cover"/>
+                  ))
+                : ""}
+            </div>
           </div>
         </dialog>
       </div>
