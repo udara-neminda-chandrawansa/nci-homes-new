@@ -53,7 +53,7 @@ export default function Nav({
             </Link>
           </li>
           <li>
-            <Link href="/latest">
+            <Link href="/projects">
               <p className="p-1 underline-offset-[20px] hover:underline">
                 Projects
               </p>{" "}
