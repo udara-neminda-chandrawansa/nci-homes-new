@@ -93,19 +93,21 @@ export default function About() {
                   <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
                 </span>
                 <h1 className="text-5xl uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
-                  About NCI Homes Properties
+                  About NCI Homes pvt ltd
                 </h1>
                 <p className="py-4 text-lg g-font-1 max-sm:text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Quisque aliquam eget eros in malesuada. Sed in consequat
-                  metus. Integer vel fermentum arcu, ultrices laoreet erat.
-                  Integer viverra lorem eu enim posuere blandit. Curabitur
-                  placerat est nec nisi semper malesuada. Morbi tincidunt, orci
-                  ut pretium facilisis, tellus enim tempor sapien, in blandit
-                  quam metus et nibh. In nec condimentum tellus, imperdiet
-                  tempus metus.
+                  Established in 2001, NCI Homes (Pvt) Ltd has became one of the
+                  leading construction company in Sri Lanka. Our main office and
+                  branches are located in Kandy, the central province of Sri
+                  Lanka. As a construction company, we undertake all type of
+                  building and home constructions, planning, designing,
+                  landscaping and all kinds of civil engineering services.
+                  Although we are located in Kandy, we are ready to provide our
+                  superior service to any part of the country. All house
+                  planning, design and construction will be under supervision of
+                  chartered civil engineers.
                 </p>
-                <p className="text-sm g-font-1">
+                <p className="hidden text-sm g-font-1">
                   * Sed vel ultrices dui, a ullamcorper tortor. Morbi gravida
                   diam et malesuada vulputate...
                 </p>
@@ -125,17 +127,18 @@ export default function About() {
         <div className="absolute bottom-0 h-fit max-[992px]:static">
           <div className="bg-white w-2/5 max-[992px]:w-full p-8 py-12 h-fit flex flex-col justify-center gap-3">
             <h1 className="text-2xl font-medium uppercase">
-              "WE ARE SHARPENING OUR STRATEGY TO BE ONE OF THE WORLD'S MOST
-              VALUABLE, MOST INNOVATIVE AND MOST ADMIRED COMPANIES"
+              We offer you the most competitive rates of the current market.
+              Brand new houses are available from 3.5 million onwards.
             </h1>
             <span className="flex items-center gap-5 p-1 text-xs tracking-widest text-gray-600 uppercase g-font-2">
-              FOUNDER | Kasun Jayamaha
+              The NCI Promise
               <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
             </span>
             <Button
-              displayText="Read Founder's Letter"
+              displayText="Contact Us"
               theme="dark"
               width={"fit"}
+              url={"/contact"}
             ></Button>
           </div>
         </div>
@@ -143,58 +146,62 @@ export default function About() {
       {/*who we are*/}
       <div className="h-fit py-6 flex flex-col justify-center gap-4 max-[992px]:h-fit max-[992px]:justify-start">
         <h1 className="text-5xl text-center uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
-          who we are
+          More about us
         </h1>
         {/*card container*/}
         <div className="w-full h-fit flex items-center p-4 gap-3 max-[992px]:flex-col">
-          <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] w-1/3 max-[992px]:w-full">
+          <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] max-md:h-fit w-1/3 max-[992px]:w-full">
             <h1 className="text-2xl uppercase max-xl:text-xl max-lg:text-lg">
-              NCI Homes PROPERTIES BOARD OF DIRECTORS
+              NCI Homes PROPERTIES free services
             </h1>
             <p className="text-xl g-font-1 max-xl:text-lg">
-              NCI Homes's leadership team is comprised of the industry's
-              most experienced leaders, who have secured our place as one of the
-              world's greatest real estate and lifestyle developers.
+              If your construction project is handed over to us, we would do the
+              following services for you free of charge. Building Plan, Bill of
+              Quantities, Plan Approval, Arranging a Loan Facility
             </p>
             <Button
               displayText={"Learn More"}
               extraClasses4Button={"bg-gray-500 w-full"}
               extraClasses={"text-white text-xs w-full border-gray-500"}
+              url={"/services"}
               theme={"dark"}
             ></Button>
           </div>
-          <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] w-1/3 max-[992px]:w-full">
+          <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] max-md:h-fit w-1/3 max-[992px]:w-full">
             <h1 className="text-2xl uppercase max-xl:text-xl max-lg:text-lg">
-              NCI Homes DEVELOPMENT BOARD OF DIRECTORS
+              design portfolio of NCI Homes
             </h1>
             <p className="text-xl g-font-1 max-xl:text-lg">
-              With their combined wisdom and innovative approach, Royal
-              Havenwood Development's leadership has been essential in
-              establishing NCI Homes as a top-tier real estate and
-              lifestyle developer.
+              Explore our wide range of projects, including single-story homes,
+              two-story and three-story residences, and commercial buildings.
+              Each structure is thoughtfully designed to blend functionality,
+              innovation, and quality.
             </p>
             <Button
               displayText={"Learn More"}
               extraClasses4Button={"bg-gray-500 w-full"}
               extraClasses={"text-white text-xs w-full border-gray-500"}
+              url={"/design"}
               theme={"dark"}
             ></Button>
           </div>
-          <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] w-1/3 max-[992px]:w-full">
+          <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] max-md:h-fit w-1/3 max-[992px]:w-full">
             <h1 className="text-2xl uppercase max-xl:text-xl max-lg:text-lg">
-              PRINCIPAL OFFICERS
+              our Experience
             </h1>
             <p className="text-xl g-font-1 max-xl:text-lg">
-              NCI Homes has built a team of motivated officers, united in
-              their commitment to excellence. This dedication stands strong,
-              even amidst our many achievements and accolades, ensuring a
-              constant drive for improvement.
+              We have over 22 years of experience in building and home
+              constructions, planning, designing, landscaping and all kinds of
+              civil engineering services. We treat our customers with the best
+              we have. Therefore we provide them a quality customer service
+              which would satisfy their expectations.
             </p>
             <Button
               displayText={"Learn More"}
               extraClasses4Button={"bg-gray-500 w-full"}
               extraClasses={"text-white text-xs w-full border-gray-500"}
               theme={"dark"}
+              url={"/projects"}
             ></Button>
           </div>
         </div>
@@ -204,20 +211,41 @@ export default function About() {
         {/*Title*/}
         <div className="flex flex-col items-start gap-5 w-1/3 px-3 py-12 max-[992px]:w-full lg:h-fit">
           <span className="flex items-center gap-5 text-xs tracking-widest text-gray-600 uppercase g-font-2">
-            Properties
+            Our guarantee
             <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
           </span>
           <h1 className="text-5xl leading-snug uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
-            Wonderful destinations
+            Choose NCI Homes
           </h1>
-          <p className="text-lg text-gray-600 g-font-1">
-            Our properties each have their own unique design aesthetic,
-            providing an aspirational lifestyle within a thriving community,
-            supported by NCI Homes’s community management team.
-          </p>
+          <div className="text-lg text-gray-600 g-font-1">
+            <ul className='ml-6 list-disc list-outside marker:text-green'>
+              <li>
+                We offer you the most competitive rates of the current market.
+                Brand new houses are available from 3.5 million onwards.
+              </li>
+              <li>
+                More than 16 years of experience in the field of construction.
+              </li>
+              <li>
+                Free insurance facilities from recognized insurance company.
+              </li>
+              <li>
+                20 years of guaranteed certificate on the structure of the
+                house.
+              </li>
+              <li>
+                Lands and houses are available from Rs. 3.5 million onwards.
+              </li>
+              <li>
+                Pay in installments, and we will begin constructions after an
+                advanced payment.
+              </li>
+            </ul>
+          </div>
           <span className="w-full max-[992px]:hidden">
             <Button
-              displayText="View All Destinations"
+              displayText="View Our Projects"
+              url={"/projects"}
               theme="dark"
               width={"[80%]"}
               extraClasses={"w-[100%]"}
@@ -229,7 +257,7 @@ export default function About() {
           <div className="flex flex-col justify-start w-1/2 px-3 max-md:w-full">
             <CardType2
               cardUrl={"https://www.google.com"}
-              cardText1={"Colombo"}
+              cardText1={""}
               cardImage={lotus_t}
               cardImageMd={
                 "https://cdn.properties.emaar.com/wp-content/uploads/2020/06/Turkey-Large-NEW-706x385.jpg"
@@ -238,7 +266,7 @@ export default function About() {
             />
             <CardType2
               cardUrl={"https://www.google.com"}
-              cardText1={"Viharamahadevi Park"}
+              cardText1={""}
               cardImage={devi_p}
               cardImageMd={devi_p}
               blackLinePClasses={"hidden"}
@@ -248,21 +276,21 @@ export default function About() {
           <div className="flex flex-col justify-start w-1/2 px-3 max-md:w-full">
             <CardType2
               cardUrl={"https://www.google.com"}
-              cardText1={"Sigiriya"}
+              cardText1={""}
               cardImage={sigiriya}
               cardImageMd={sigiriya}
               blackLinePClasses={"hidden"}
             />
             <CardType2
               cardUrl={"https://www.google.com"}
-              cardText1={"Galle"}
+              cardText1={""}
               cardImage={galle}
               cardImageMd={galle}
               blackLinePClasses={"hidden"}
             />
             <CardType2
               cardUrl={"https://www.google.com"}
-              cardText1={"Yala"}
+              cardText1={""}
               cardImage={yala}
               cardImageMd={yala}
               blackLinePClasses={"hidden"}
@@ -271,15 +299,16 @@ export default function About() {
         </div>
         <span className="w-full hidden p-3 md:w-1/2 max-[992px]:flex">
           <Button
-            displayText="View All Properties"
+            displayText="View All Projects"
+            url={"/projects"}
             theme="dark"
             width={"full"}
             extraClasses={"w-[100%]"}
           />
         </span>
       </div>
-      {/*other NCI Homes businesses*/}
-      <div className="flex items-center justify-center px-3 py-12 h-fit max-lg:h-fit">
+      {/*other NCI Homes businesses (hidden)*/}
+      <div className="items-center justify-center hidden px-3 py-12 h-fit max-lg:h-fit">
         <div className="flex flex-col w-full gap-3">
           <span className="flex items-center gap-5 text-xs tracking-widest text-gray-600 uppercase g-font-2">
             More
@@ -334,8 +363,8 @@ export default function About() {
           </div>
         </div>
       </div>
-      {/*3 cards - card container*/}
-      <div className="bg-gray-50 h-fit py-6 flex justify-between items-center gap-8 px-4 max-[992px]:h-fit max-[992px]:flex-col">
+      {/*3 cards - card container (hidden)*/}
+      <div className="bg-gray-50 h-fit py-6 hidden justify-between items-center gap-8 px-4 max-[992px]:h-fit max-[992px]:flex-col">
         <CardType3
           titleText={"INVESTOR RELATIONS"}
           contentText={
@@ -367,8 +396,8 @@ export default function About() {
           extraClasses={"h-[500px] justify-between"}
         />
       </div>
-      {/*featured awards*/}
-      <div className="flex flex-col justify-center w-full py-6 bg-white h-fit">
+      {/*featured awards (hidden, opacity 0)*/}
+      <div className="flex-col justify-center hidden w-full py-6 bg-white opacity-0 h-fit">
         {/*heading*/}
         <h1 className="text-5xl leading-snug text-center uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
           Featured awards
