@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 
 import Button from "./components/Button";
 import Footer from "./components/Footer";
@@ -36,6 +37,10 @@ const hara_hou_grid = [
   hara_hou_12,
   hara_hou_13,
 ];
+
+const katugastota_hotel_grid = import.meta.glob(
+  './images/projects/ongoing/katugastota_hotel/*.{png,jpg,jpeg,svg}'
+);
 
 export default function Projects() {
   const handleLaunchFilter = (Filter) => {
@@ -95,6 +100,21 @@ export default function Projects() {
   const completedProjects = [
     ["Haragama Housing Project", haragama_housing, "Project Description"],
   ];
+  const [katugastotaHotelImages, setKatugastotaHotelImages] = useState([]);
+
+
+  useEffect(() => {
+    // Load katugastota_hotel_grid images
+    const loadKatugastotaHotelImages = async () => {
+      const imageModules = Object.keys(katugastota_hotel_grid).map((key) =>
+        katugastota_hotel_grid[key]()
+      );
+      const resolvedImages = await Promise.all(imageModules);
+      setKatugastotaHotelImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadKatugastotaHotelImages();
+  }, []);
 
   return (
     <>
@@ -230,12 +250,25 @@ export default function Projects() {
                 ✕
               </button>
             </form>
-            <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6">
+            <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 pt-6">
               {selectedProject === 0
                 ? hara_hou_grid.map((image, index) => (
-                    <img key={index} src={image} className="h-[300px] w-full object-cover"/>
+                    <img
+                      key={index}
+                      src={image}
+                      className="h-[300px] w-full object-cover"
+                    />
                   ))
-                : ""}
+                : selectedProject === 1
+                  ? katugastotaHotelImages.map((src, index) => (
+                    <img
+                      key={index}
+                      src={src}
+                      alt={`Katugastota Hotel Image ${index}`}
+                      className="h-[300px] w-full object-cover"
+                    />
+                  ))
+                  : ""}
             </div>
           </div>
         </dialog>
