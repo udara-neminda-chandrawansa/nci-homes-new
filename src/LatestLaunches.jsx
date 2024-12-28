@@ -19,6 +19,15 @@ import wattaranthenna_housing from "./images/projects/completed/wattaranthenna_h
 import nugawela_housing from "./images/projects/completed/nugawela_housing.jpg";
 import kengalla_housing from "./images/projects/completed/kengalla_housing.jpg";
 import hantana_1_housing from "./images/projects/completed/hantana_1_housing.jpg";
+import ranawana_eco_housing from "./images/projects/completed/ranawana_eco_housing.jpg";
+import heerasgala_housing from "./images/projects/completed/heerasgala_housing.jpg";
+import nittabuwa_three_story from "./images/projects/completed/nittabuwa_three_story.jpg";
+import iriyagama_housing from "./images/projects/completed/iriyagama_housing.jpg"; //
+import dodamwala_three_story from "./images/projects/completed/dodamwala_three_story.jpg"; //
+import mahaiyawa_2_story from "./images/projects/completed/mahaiyawa_2_story.jpg"; //
+import lewella_2_story from "./images/projects/completed/lewella_2_story.jpg"; //
+import aniwatta_2_story from "./images/projects/completed/aniwatta_2_story.jpg"; //
+import kundasale_housing from "./images/projects/completed/kundasale_housing.jpg"; //
 
 // image galleries of completed projects *
 const hara_hou_grid = import.meta.glob(
@@ -56,6 +65,33 @@ const kengalla_hou_grid = import.meta.glob(
 );
 const hantana_1_hou_grid = import.meta.glob(
   "./images/projects/completed/hantana_1_housing/*.{png,jpg,jpeg,svg}"
+);
+const ranawana_eco_grid = import.meta.glob(
+  "./images/projects/completed/ranawana_eco_housing/*.{png,jpg,jpeg,svg}"
+);
+const heerasgala_hou_grid = import.meta.glob(
+  "./images/projects/completed/heerasgala_housing/*.{png,jpg,jpeg,svg}"
+);
+const nittabuwa_3story_hou_grid = import.meta.glob(
+  "./images/projects/completed/nittabuwa_three_story/*.{png,jpg,jpeg,svg}"
+);
+const iriyagama_hou_grid = import.meta.glob(
+  "./images/projects/completed/iriyagama_housing/*.{png,jpg,jpeg,svg}"
+);
+const dodamwala_3story_hou_grid = import.meta.glob(
+  "./images/projects/completed/dodamwala_three_story/*.{png,jpg,jpeg,svg}"
+);
+const mahaiyawa_2story_hou_grid = import.meta.glob(
+  "./images/projects/completed/mahaiyawa_2_story/*.{png,jpg,jpeg,svg}"
+);
+const lewella_2story_hou_grid = import.meta.glob(
+  "./images/projects/completed/lewella_2_story/*.{png,jpg,jpeg,svg}"
+);
+const aniwatta_2story_hou_grid = import.meta.glob(
+  "./images/projects/completed/aniwatta_2_story/*.{png,jpg,jpeg,svg}"
+);
+const kundasale_hou_grid = import.meta.glob(
+  "./images/projects/completed/kundasale_housing/*.{png,jpg,jpeg,svg}"
 );
 
 // image galleries of ongoing projects *
@@ -154,6 +190,27 @@ export default function Projects() {
       hantana_1_housing,
       "Project Description",
     ],
+    [
+      "Ranawana Eco-Friendly House",
+      ranawana_eco_housing,
+      "Project Description",
+    ],
+    ["Heerassagala Housing Project", heerasgala_housing, "Project Description"],
+    [
+      "Nittabuwa Three Story House",
+      nittabuwa_three_story,
+      "Project Description",
+    ],
+    ["Iriyagama Housing Project", iriyagama_housing, "Project Description"],
+    [
+      "Dodamwala Three Story House",
+      dodamwala_three_story,
+      "Project Description",
+    ],
+    ["Mahaiyawa Two Story House", mahaiyawa_2_story, "Project Description"],
+    ["Lewella Two Story House", lewella_2_story, "Project Description"],
+    ["Aniwatta Two Story House", aniwatta_2_story, "Project Description"],
+    ["Kundasale Housing Project", kundasale_housing, "Project Description"],
   ];
 
   // completed proj gallery array (for modal) *
@@ -171,6 +228,22 @@ export default function Projects() {
   const [nugawelaHousingImages, setNugawelaHouseImages] = useState([]);
   const [kengallaHousingImages, setKengallaHouseImages] = useState([]);
   const [hantana1HousingImages, setHantana1HouseImages] = useState([]);
+  const [ranawanaEcoImages, setRanawanaEcoImages] = useState([]);
+  const [heerasgalaHousingImages, setHeerasgalaHouseImages] = useState([]);
+  const [nittabuwa3StoryHousingImages, setNittabuwa3StoryHouseImages] =
+    useState([]);
+  const [iriyagamaHousingImages, setIriyagamaHouseImages] = useState([]);
+  const [dodamwala3StoryHousingImages, setDodamwala3StoryHouseImages] =
+    useState([]);
+  const [mahaiyawa2StoryHousingImages, setMahaiyawa2StoryHouseImages] =
+    useState([]);
+  const [lewella2StoryHousingImages, setLewella2StoryHouseImages] = useState(
+    []
+  );
+  const [aniwatta2StoryHousingImages, setAniwatta2StoryHouseImages] = useState(
+    []
+  );
+  const [kundasaleHousingImages, setKundasaleHouseImages] = useState([]);
 
   // ongoing proj gallery array (for modal) *
   const [katugastotaHotelImages, setKatugastotaHotelImages] = useState([]);
@@ -312,6 +385,108 @@ export default function Projects() {
     };
 
     loadHantana1HouseImages();
+
+    // Load ranawana_eco_grid images
+    const loadRanawanaEcoImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(ranawana_eco_grid).map((key) => ranawana_eco_grid[key]())
+      );
+      setRanawanaEcoImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadRanawanaEcoImages();
+
+    // Load heerasgala_hou_grid images
+    const loadHeerasgalaHouseImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(heerasgala_hou_grid).map((key) =>
+          heerasgala_hou_grid[key]()
+        )
+      );
+      setHeerasgalaHouseImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadHeerasgalaHouseImages();
+
+    // Load nittabuwa_3story_hou_grid images
+    const loadNittabuwa3StoryHouseImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(nittabuwa_3story_hou_grid).map((key) =>
+          nittabuwa_3story_hou_grid[key]()
+        )
+      );
+      setNittabuwa3StoryHouseImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadNittabuwa3StoryHouseImages();
+
+    // Load iriyagama_hou_grid images //
+    const loadIriyagamaHouseImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(iriyagama_hou_grid).map((key) => iriyagama_hou_grid[key]())
+      );
+      setIriyagamaHouseImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadIriyagamaHouseImages();
+
+    // Load dodamwala_3story_hou_grid images //
+    const loadDodamwala3StoryHouseImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(dodamwala_3story_hou_grid).map((key) =>
+          dodamwala_3story_hou_grid[key]()
+        )
+      );
+      setDodamwala3StoryHouseImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadDodamwala3StoryHouseImages();
+
+    // Load mahaiyawa_2story_hou_grid images //
+    const loadMahaiyawa2StoryHouseImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(mahaiyawa_2story_hou_grid).map((key) =>
+          mahaiyawa_2story_hou_grid[key]()
+        )
+      );
+      setMahaiyawa2StoryHouseImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadMahaiyawa2StoryHouseImages();
+
+    // Load lewella_2story_hou_grid images //
+    const loadLewella2StoryHouseImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(lewella_2story_hou_grid).map((key) =>
+          lewella_2story_hou_grid[key]()
+        )
+      );
+      setLewella2StoryHouseImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadLewella2StoryHouseImages();
+
+    // Load aniwatta_2story_hou_grid images //
+    const loadAniwatta2StoryHouseImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(aniwatta_2story_hou_grid).map((key) =>
+          aniwatta_2story_hou_grid[key]()
+        )
+      );
+      setAniwatta2StoryHouseImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadAniwatta2StoryHouseImages();
+
+    // Load kundasale_hou_grid images //
+    const loadKundasaleHouseImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(kundasale_hou_grid).map((key) => kundasale_hou_grid[key]())
+      );
+      setKundasaleHouseImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadKundasaleHouseImages();
   }, []);
 
   return (
@@ -563,7 +738,106 @@ export default function Projects() {
                                             />
                                           )
                                         )
-                                      : ""}
+                                      : selectedProject === 12
+                                        ? ranawanaEcoImages.map(
+                                            (src, index) => (
+                                              <img
+                                                key={index}
+                                                src={src}
+                                                alt={`Ranawana Eco Friendly Housing Image ${index}`}
+                                                className="h-[300px] w-full object-cover"
+                                              />
+                                            )
+                                          )
+                                        : selectedProject === 13
+                                          ? heerasgalaHousingImages.map(
+                                              (src, index) => (
+                                                <img
+                                                  key={index}
+                                                  src={src}
+                                                  alt={`Heerasgala Housing Image ${index}`}
+                                                  className="h-[300px] w-full object-cover"
+                                                />
+                                              )
+                                            )
+                                          : selectedProject === 14
+                                            ? nittabuwa3StoryHousingImages.map(
+                                                (src, index) => (
+                                                  <img
+                                                    key={index}
+                                                    src={src}
+                                                    alt={`Nittabuwa 3 Story House Image ${index}`}
+                                                    className="h-[300px] w-full object-cover"
+                                                  />
+                                                )
+                                              )
+                                            : selectedProject === 15
+                                              ? iriyagamaHousingImages.map(
+                                                  (src, index) => (
+                                                    <img
+                                                      key={index}
+                                                      src={src}
+                                                      alt={`Iriyagama House Image ${index}`}
+                                                      className="h-[300px] w-full object-cover"
+                                                    />
+                                                  )
+                                                )
+                                              : selectedProject === 16
+                                                ? dodamwala3StoryHousingImages.map(
+                                                    (src, index) => (
+                                                      <img
+                                                        key={index}
+                                                        src={src}
+                                                        alt={`Dodamwala House Image ${index}`}
+                                                        className="h-[300px] w-full object-cover"
+                                                      />
+                                                    )
+                                                  )
+                                                : selectedProject === 17
+                                                  ? mahaiyawa2StoryHousingImages.map(
+                                                      (src, index) => (
+                                                        <img
+                                                          key={index}
+                                                          src={src}
+                                                          alt={`Mahaiyawa House Image ${index}`}
+                                                          className="h-[300px] w-full object-cover"
+                                                        />
+                                                      )
+                                                    )
+                                                  : selectedProject === 18
+                                                    ? lewella2StoryHousingImages.map(
+                                                        (src, index) => (
+                                                          <img
+                                                            key={index}
+                                                            src={src}
+                                                            alt={`Lewelle House Image ${index}`}
+                                                            className="h-[300px] w-full object-cover"
+                                                          />
+                                                        )
+                                                      )
+                                                    : selectedProject === 19
+                                                      ? aniwatta2StoryHousingImages.map(
+                                                          (src, index) => (
+                                                            <img
+                                                              key={index}
+                                                              src={src}
+                                                              alt={`Aniwatta House Image ${index}`}
+                                                              className="h-[300px] w-full object-cover"
+                                                            />
+                                                          )
+                                                        )
+                                                      : selectedProject === 20
+                                                        ? kundasaleHousingImages.map(
+                                                            (src, index) => (
+                                                              <img
+                                                                key={index}
+                                                                src={src}
+                                                                alt={`Kundasale House Image ${index}`}
+                                                                className="h-[300px] w-full object-cover"
+                                                              />
+                                                            )
+                                                          )
+                                                        : ""}
             </div>
           </div>
         </dialog>
