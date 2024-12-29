@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import Sidebar from "./components/Sidebar";
 
-// images for proj cards *
+// images for proj cards
 import haragama_housing from "./images/projects/completed/haragama_housing.jpg";
 import nuwara_eliya_housing from "./images/projects/completed/nuwara_eliya_housing.jpg";
 import housing_kandy from "./images/projects/completed/housing_kandy.jpg";
@@ -22,14 +22,38 @@ import hantana_1_housing from "./images/projects/completed/hantana_1_housing.jpg
 import ranawana_eco_housing from "./images/projects/completed/ranawana_eco_housing.jpg";
 import heerasgala_housing from "./images/projects/completed/heerasgala_housing.jpg";
 import nittabuwa_three_story from "./images/projects/completed/nittabuwa_three_story.jpg";
-import iriyagama_housing from "./images/projects/completed/iriyagama_housing.jpg"; //
-import dodamwala_three_story from "./images/projects/completed/dodamwala_three_story.jpg"; //
-import mahaiyawa_2_story from "./images/projects/completed/mahaiyawa_2_story.jpg"; //
-import lewella_2_story from "./images/projects/completed/lewella_2_story.jpg"; //
-import aniwatta_2_story from "./images/projects/completed/aniwatta_2_story.jpg"; //
-import kundasale_housing from "./images/projects/completed/kundasale_housing.jpg"; //
+import iriyagama_housing from "./images/projects/completed/iriyagama_housing.jpg";
+import dodamwala_three_story from "./images/projects/completed/dodamwala_three_story.jpg";
+import mahaiyawa_2_story from "./images/projects/completed/mahaiyawa_2_story.jpg";
+import lewella_2_story from "./images/projects/completed/lewella_2_story.jpg";
+import aniwatta_2_story from "./images/projects/completed/aniwatta_2_story.jpg";
+import kundasale_housing from "./images/projects/completed/kundasale_housing.jpg";
+import katugastota_hotel from "./images/projects/ongoing/katugastota_hotel.jpg";
+import kandy_school from "./images/projects/ongoing/kandy-school.jpg";
+import ranawana_eco_2 from "./images/projects/ongoing/ranawana-eco-2.jpg";
+import katugastota from "./images/projects/ongoing/katugastota.jpg";
+import nugawela from "./images/projects/ongoing/nugawela.jpg";
+import kurunegala from "./images/projects/ongoing/kurunegala.jpg";
+import pinnawala from "./images/projects/ongoing/pinnawala.jpg";
+import haragama from "./images/projects/ongoing/haragama.jpg";
+import hantana_3 from "./images/projects/ongoing/hantana-3.jpg";
+import digana from "./images/projects/ongoing/digana.jpg";
+import balagolla from "./images/projects/ongoing/balagolla.jpg";
+import polgolla from "./images/projects/ongoing/polgolla.jpg";
+import aniwatte from "./images/projects/ongoing/aniwatte.jpg";
+import gohagoda from "./images/projects/ongoing/gohagoda.jpg";
+import international_school from "./images/projects/ongoing/international-school.jpg";
+import balagolla_industrial_zone from "./images/projects/ongoing/balagolla-industrial-zone.jpg";
+import mahaiyawa from "./images/projects/ongoing/mahaiyawa.jpg";
+import thennekumbura from "./images/projects/ongoing/thennekumbura.jpg";
+import udaperadeniya from "./images/projects/ongoing/udaperadeniya.jpg";
+import rajapihilla_hotel from "./images/projects/ongoing/rajapihilla-hotel.jpg";
+import ranawana_3 from "./images/projects/ongoing/ranawana-3.jpg";
+import padiyapelella from "./images/projects/ongoing/padiyapelella.jpg";
+import pallekele from "./images/projects/ongoing/pallekele.jpg";
+import mapanawathura from "./images/projects/ongoing/mapanawathura.jpg";
 
-// image galleries of completed projects *
+// image galleries of completed projects
 const hara_hou_grid = import.meta.glob(
   "./images/projects/completed/haragama_housing/*.{png,jpg,jpeg,svg}"
 );
@@ -98,6 +122,15 @@ const kundasale_hou_grid = import.meta.glob(
 const katugastota_hotel_grid = import.meta.glob(
   "./images/projects/ongoing/katugastota_hotel/*.{png,jpg,jpeg,svg}"
 );
+const polgolla_grid = import.meta.glob(
+  "./images/projects/ongoing/polgolla/*.{png,jpg,jpeg,svg}"
+); // 
+const aniwatte_grid = import.meta.glob(
+  "./images/projects/ongoing/aniwatte/*.{png,jpg,jpeg,svg}"
+); // 
+const gohagoda_grid = import.meta.glob(
+  "./images/projects/ongoing/gohagoda/*.{png,jpg,jpeg,svg}"
+); // 
 
 export default function Projects() {
   // filter proj type
@@ -156,7 +189,7 @@ export default function Projects() {
   // selected proj (for image gallery modal)
   const [selectedProject, setSelectedProject] = useState(0);
 
-  // completed projects array (for cards) *
+  // completed projects array (for cards)
   const completedProjects = [
     ["Haragama Housing Project", haragama_housing, "Project Description"],
     [
@@ -213,7 +246,51 @@ export default function Projects() {
     ["Kundasale Housing Project", kundasale_housing, "Project Description"],
   ];
 
-  // completed proj gallery array (for modal) *
+  // ongoing projects array (for cards)
+  const ongoingProjects = [
+    ["A Hotel at Katugastota", katugastota_hotel, "Project Description"],
+    ["Kandy School Project", kandy_school, "Project Description"],
+    ["Ranawana Eco Housing Project #2", ranawana_eco_2, "Project Description"],
+    ["Katugastota Housing Project", katugastota, "Project Description"],
+    ["Nugawela Construction Project", nugawela, "Project Description"],
+    ["Kurunegala Construction Project", kurunegala, "Project Description"],
+    ["Pinnawala Housing Project", pinnawala, "Project Description"],
+    ["Haragama Housing Project", haragama, "Project Description"],
+    ["Hantana Housing Project 3", hantana_3, "Project Description"],
+    ["Digana Housing Project", digana, "Project Description"],
+    ["Balagolla Housing Project", balagolla, "Project Description"],
+    ["Polgolla Housing Project", polgolla, "Project Description"],
+    ["Aniwatte Housing Project", aniwatte, "Project Description"],
+    ["Gohagoda Housing Project", gohagoda, "Project Description"],
+    [
+      "International School Project",
+      international_school,
+      "Project Description",
+    ],
+    [
+      "Balagolla Industrial Zone Building Project",
+      balagolla_industrial_zone,
+      "Project Description",
+    ],
+    ["Mahaiyawa Housing Project", mahaiyawa, "Project Description"],
+    ["Thennekumbura Housing Project", thennekumbura, "Project Description"],
+    ["Udaperadeniya Housing Project", udaperadeniya, "Project Description"],
+    [
+      "Rajapihilla Mawatha Hotel Construction Project",
+      rajapihilla_hotel,
+      "Project Description",
+    ],
+    ["Ranawana Housing Project #3", ranawana_3, "Project Description"],
+    [
+      "Padiyapelella Commercial Building Project",
+      padiyapelella,
+      "Project Description",
+    ],
+    ["Pallekele Commercial Building Project", pallekele, "Project Description"],
+    ["Mapanawathura Housing Project", mapanawathura, "Project Description"],
+  ];
+
+  // completed proj gallery array (for modal)
   const [haraHouseImages, setHaraHouseImages] = useState([]);
   const [nuwEliyaHouseImages, setNuwEliyaHouseImages] = useState([]);
   const [kandyHouseImages, setKandyHouseImages] = useState([]);
@@ -247,6 +324,9 @@ export default function Projects() {
 
   // ongoing proj gallery array (for modal) *
   const [katugastotaHotelImages, setKatugastotaHotelImages] = useState([]);
+  const [polgollaImages, setPolgollaImages] = useState([]);
+  const [aniwatteImages, setAniwatteImages] = useState([]);
+  const [gohagodaImages, setGohagodaImages] = useState([]);
 
   // use effect for auto loading *
   useEffect(() => {
@@ -487,6 +567,36 @@ export default function Projects() {
     };
 
     loadKundasaleHouseImages();
+
+    // Load polgolla_grid images //
+    const loadPolgollaImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(polgolla_grid).map((key) => polgolla_grid[key]())
+      );
+      setPolgollaImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadPolgollaImages(); // 
+
+    // Load aniwatte_grid images //
+    const loadAniwatteImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(aniwatte_grid).map((key) => aniwatte_grid[key]())
+      );
+      setAniwatteImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadAniwatteImages(); // 
+
+    // Load gohagoda_grid images //
+    const loadGohagodaImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(gohagoda_grid).map((key) => gohagoda_grid[key]())
+      );
+      setGohagodaImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadGohagodaImages(); // 
   }, []);
 
   return (
@@ -576,43 +686,46 @@ export default function Projects() {
           </div>
         ))}
         {/*ongoing map needed!!*/}
-        <div className="unit-card now-available w-full h-[320px] flex gap-4 max-md:flex-col max-lg:h-fit">
-          <div className="w-1/2 max-md:w-full max-md:h-1/2">
-            <img
-              src="https://cdn.properties.emaar.com/wp-content/uploads/2024/10/HERO_1620X832_1-4-706x385.jpg"
-              alt="img"
-              className="object-cover w-full h-full"
-            ></img>
-          </div>
-          <div className="flex flex-col justify-center w-1/2 max-md:w-full max-lg:h-fit">
-            <div className="flex flex-col justify-between pl-12 h-4/5 max-md:pl-0 max-lg:gap-5">
-              <p className="uppercase px-8 py-1 border-[1px] text-blue-900 border-solid border-gray-400 w-fit text-sm">
-                Ongoing Projects
-              </p>
-              <h1 className="text-3xl font-semibold uppercase">
-                GREENVILLE AT NCI Homes SOUTH
-              </h1>
-              <span>
-                <p className="w-full g-font-1">
-                  Welcome to Greenville, a peaceful community designed for
-                  families to thrive.
+        {ongoingProjects.map((project, index) => (
+          <div
+            key={index + 21}
+            className="unit-card now-available w-full h-[320px] flex gap-4 max-md:flex-col max-md:h-fit"
+          >
+            <div className="w-1/2 max-md:w-full max-md:h-1/2">
+              <img
+                src={project[1]}
+                alt="img"
+                className="object-cover w-full h-full"
+              ></img>
+            </div>
+            <div className="flex flex-col justify-center w-1/2 max-md:w-full max-md:h-1/2">
+              <div className="flex flex-col justify-between pl-12 h-4/5 max-md:pl-0 max-md:gap-5">
+                <p className="uppercase px-8 py-1 border-[1px] text-blue-900 border-solid border-gray-400 w-fit text-sm">
+                  Ongoing Projects
                 </p>
-              </span>
-              <span className="flex gap-2 max-lg:flex-col">
-                <Button
-                  displayText={"View More Details"}
-                  theme={"dark"}
-                  extraClasses={"text-xs"}
-                  width={"fit"}
-                  onClick={() => {
-                    setSelectedProject(999); // map needed for this
-                    document.getElementById("my_modal_3").showModal();
-                  }}
-                ></Button>
-              </span>
+                <h1 className="text-3xl font-semibold uppercase">
+                  {project[0]}
+                </h1>
+                <span>
+                  <p className="w-full g-font-1">{project[2]}</p>
+                </span>
+                <span className="flex gap-2 max-lg:flex-col">
+                  <Button
+                    displayText={"View More Details"}
+                    theme={"dark"}
+                    extraClasses={"text-xs"}
+                    width={"fit"}
+                    onClick={() => {
+                      setSelectedProject(index + 21);
+                      document.getElementById("my_modal_3").showModal();
+                    }}
+                  ></Button>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
+
         <Footer></Footer>
         {/*image modal*/}
         <dialog id="my_modal_3" className="modal">
@@ -837,7 +950,195 @@ export default function Projects() {
                                                               />
                                                             )
                                                           )
-                                                        : ""}
+                                                        : selectedProject === 21
+                                                          ? katugastotaHotelImages.map(
+                                                              (src, index) => (
+                                                                <img
+                                                                  key={index}
+                                                                  src={src}
+                                                                  alt={`Katugastota Hotel Image ${index}`}
+                                                                  className="h-[300px] w-full object-cover"
+                                                                />
+                                                              )
+                                                            )
+                                                          : selectedProject === 32
+                                                          ? polgollaImages.map(
+                                                              (src, index) => (
+                                                                <img
+                                                                  key={index}
+                                                                  src={src}
+                                                                  alt={`Polgolla Image ${index}`}
+                                                                  className="h-[300px] w-full object-cover"
+                                                                />
+                                                              )
+                                                            )
+                                                          : selectedProject === 33
+                                                          ? aniwatteImages.map(
+                                                              (src, index) => (
+                                                                <img
+                                                                  key={index}
+                                                                  src={src}
+                                                                  alt={`Aniwatte Image ${index}`}
+                                                                  className="h-[300px] w-full object-cover"
+                                                                />
+                                                              )
+                                                            )
+                                                          : selectedProject === 34
+                                                          ? gohagodaImages.map(
+                                                              (src, index) => (
+                                                                <img
+                                                                  key={index}
+                                                                  src={src}
+                                                                  alt={`Gohagoda Image ${index}`}
+                                                                  className="h-[300px] w-full object-cover"
+                                                                />
+                                                              )
+                                                            )
+                                                          : ""}
+            </div>
+            <div className="grid grid-cols-1">
+              {selectedProject === 22 ? (
+                <img
+                  src={kandy_school}
+                  alt={`Kandy School Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 23 ? (
+                <img
+                  src={ranawana_eco_2}
+                  alt={`Ranawana Eco 2 Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 24 ? (
+                <img
+                  src={katugastota}
+                  alt={`Ranawana Eco 2 Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 25 ? (
+                <img
+                  src={nugawela}
+                  alt={`Nugawela Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 26 ? (
+                <img
+                  src={kurunegala}
+                  alt={`Kurunegala Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 27 ? (
+                <img
+                  src={pinnawala}
+                  alt={`Pinnawala Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 28 ? (
+                <img
+                  src={haragama}
+                  alt={`Haragama Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 29 ? (
+                <img
+                  src={hantana_3}
+                  alt={`Hantana 3 Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 30 ? (
+                <img
+                  src={digana}
+                  alt={`Digana Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 31 ? (
+                <img
+                  src={balagolla}
+                  alt={`Balagolla Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 35 ? (
+                <img
+                  src={international_school}
+                  alt={`International School Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 36 ? (
+                <img
+                  src={balagolla_industrial_zone}
+                  alt={`Industrial Zone Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 37 ? (
+                <img
+                  src={mahaiyawa}
+                  alt={`Mahaiyawa Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 38 ? (
+                <img
+                  src={thennekumbura}
+                  alt={`Thennekumbura Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 39 ? (
+                <img
+                  src={udaperadeniya}
+                  alt={`Udaperadeniya Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 40 ? (
+                <img
+                  src={rajapihilla_hotel}
+                  alt={`Rajapihilla Hotel Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 41 ? (
+                <img
+                  src={ranawana_3}
+                  alt={`Ranawana 3 Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 42 ? (
+                <img
+                  src={padiyapelella}
+                  alt={`Padiyapelella Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 43 ? (
+                <img
+                  src={pallekele}
+                  alt={`Pallekele Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+              selectedProject === 44 ? (
+                <img
+                  src={mapanawathura}
+                  alt={`Mapanawathura Image`}
+                  className="object-cover w-full"
+                />
+              ) : 
+                ""
+              }
             </div>
           </div>
         </dialog>
