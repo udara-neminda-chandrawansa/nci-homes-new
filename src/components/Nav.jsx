@@ -60,9 +60,11 @@ export default function Nav({
             </Link>
           </li>
           <li>
+          <Link href="/services">
             <p className="p-1 underline-offset-[20px] hover:underline">
-              Communities
+              Services
             </p>{" "}
+            </Link>
           </li>
           <li>
             <p className="p-1 underline-offset-[20px] hover:underline">

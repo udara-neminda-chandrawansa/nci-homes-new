@@ -23,12 +23,12 @@ export default function Sidebar() {
           </Link>
         </li>
         <li>
-          <a
-            href="https://www.google.com"
+          <Link
+            href="/services"
             className="p-1 border-t-[1px] border-t-gray-300 flex"
           >
-            Communities
-          </a>
+            Services
+          </Link>
         </li>
         <li>
           <a
