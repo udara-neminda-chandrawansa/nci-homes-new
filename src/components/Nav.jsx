@@ -67,9 +67,11 @@ export default function Nav({
             </Link>
           </li>
           <li>
+          <Link href="/designs">
             <p className="p-1 underline-offset-[20px] hover:underline">
-              Sustainability
+              Designs
             </p>{" "}
+            </Link>
           </li>
         </ul>
       </span>

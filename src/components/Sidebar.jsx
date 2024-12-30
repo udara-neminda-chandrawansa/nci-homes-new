@@ -31,14 +31,14 @@ export default function Sidebar() {
           </Link>
         </li>
         <li>
-          <a
-            href="https://www.google.com"
+          <Link
+            href="/designs"
             className="p-1 border-t-[1px] border-t-gray-300 flex"
           >
-            Sustainability
-          </a>
+            Designs
+          </Link>
         </li>
-        <li>
+        <li className="hidden">
           <a
             href="https://www.google.com"
             className="p-1 border-t-[1px] border-t-gray-300 flex"
@@ -46,7 +46,7 @@ export default function Sidebar() {
             Eng
           </a>
         </li>
-        <li>
+        <li className="hidden">
           <a
             href="https://www.google.com"
             className="p-1 border-t-[1px] border-t-gray-300 flex"

@@ -95,21 +95,21 @@ export default function Designs() {
       {/*card container*/}
       <div className="flex flex-col w-full gap-12 px-4 max-lg:h-full">
         <h1 className="text-5xl">Single Story Designs</h1>
-        <div className="grid grid-cols-4 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+        <div className="grid grid-cols-4 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 h-[500px] overflow-y-scroll">
           {/*single map*/}
           {singleImages.map((image, index) => (
             <img src={image} key={index} alt="single story image" />
           ))}
         </div>
         <h1 className="text-5xl">Two Story Designs</h1>
-        <div className="grid grid-cols-4 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+        <div className="grid grid-cols-4 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 h-[500px] overflow-y-scroll">
           {/*two map*/}
           {twoImages.map((image, index) => (
             <img src={image} key={index} alt="two story image" />
           ))}
         </div>
         <h1 className="text-5xl">Three Story Designs</h1>
-        <div className="grid grid-cols-4 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1">
+        <div className="grid grid-cols-4 gap-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 h-[500px] overflow-y-scroll">
           {/*three map*/}
           {threeImages.map((image, index) => (
             <img src={image} key={index} alt="three story image" />
