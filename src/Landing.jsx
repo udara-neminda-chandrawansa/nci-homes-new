@@ -5,7 +5,7 @@ import HomeSection1 from "./components/HomeSection1";
 //import HomeSection2 from "./components/HomeSection2";
 import HomeSection2New from "./components/HomeSection2New";
 import HomeSection3 from "./components/HomeSection3";
-import PartnersCar from "./components/PartnersCar";
+//import PartnersCar from "./components/PartnersCar";
 import Footer from "./components/Footer";
 
 import WhatsAppWidget from "react-whatsapp-chat-widget";
@@ -23,7 +23,6 @@ export default function Landing() {
       </div>
       <HomeSection1 />
       <HomeSection2New />
-      <PartnersCar />
       <HomeSection3 />
       <Footer />
       <WhatsAppWidget
