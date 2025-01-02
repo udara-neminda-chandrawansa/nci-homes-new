@@ -27,7 +27,7 @@ export default function Landing() {
       <HomeSection3 />
       <Footer />
       <WhatsAppWidget
-        phoneNo="9477556677"
+        phoneNo="94777860950"
         position="right"
         widgetWidth="300px"
         widgetWidthMobile="260px"

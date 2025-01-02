@@ -80,7 +80,7 @@ export default function Nav({
         <ul
           className={`flex gap-5 p-3 text-xs tracking-widest uppercase optima-bold text-${textColor}`}
         >
-          <li>
+          <li className="hidden">
             <span className="inline-block p-1 lang-link">
               <span className="flex">
                 Eng
@@ -109,7 +109,7 @@ export default function Nav({
               </span>
             </span>
           </li>
-          <li>
+          <li className="hidden">
             <a href="https://www.google.com" className="flex p-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@ export default function Nav({
             </a>
           </li>
           <li>
-            <a href="https://www.google.com" className="flex p-1">
+            <a href="https://wa.me/94777860950" className="flex p-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
