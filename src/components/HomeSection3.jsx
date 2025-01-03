@@ -1,17 +1,53 @@
 import Button from "./Button";
 import CardType1 from "./CardType1";
 import React, { useRef } from "react";
-import proj_1 from "../images/projects/card_1.png";
-import proj_2 from "../images/projects/card_2.png";
-import proj_3 from "../images/projects/card_3.png";
-import proj_4 from "../images/projects/card_4.png";
-import proj_5 from "../images/projects/card_5.png";
-import proj_6 from "../images/projects/card_6.png";
-import proj_7 from "../images/projects/card_7.png";
-import proj_8 from "../images/projects/card_8.png";
-import proj_9 from "../images/projects/card_9.png";
-import proj_10 from "../images/projects/card_10.png";
-import proj_11 from "../images/projects/card_11.png";
+
+// all projects
+import haragama_housing from "./../images/projects/completed/haragama_housing.jpg";
+import nuwara_eliya_housing from "./../images/projects/completed/nuwara_eliya_housing.jpg";
+import housing_kandy from "./../images/projects/completed/housing_kandy.jpg";
+import abathenna_housing from "./../images/projects/completed/abathenna_housing.jpg";
+import wells_park_kandy from "./../images/projects/completed/wells_park_kandy.jpg";
+import ranawana_housing from "./../images/projects/completed/ranawana_housing.jpg";
+import hantana_2_housing from "./../images/projects/completed/hantana_2_housing.jpg";
+import katugastota_2_housing from "./../images/projects/completed/katugastota_2_housing.jpg";
+import wattaranthenna_housing from "./../images/projects/completed/wattaranthenna_housing.jpg";
+import nugawela_housing from "./../images/projects/completed/nugawela_housing.jpg";
+import kengalla_housing from "./../images/projects/completed/kengalla_housing.jpg";
+import hantana_1_housing from "./../images/projects/completed/hantana_1_housing.jpg";
+import ranawana_eco_housing from "./../images/projects/completed/ranawana_eco_housing.jpg";
+import heerasgala_housing from "./../images/projects/completed/heerasgala_housing.jpg";
+import nittabuwa_three_story from "./../images/projects/completed/nittabuwa_three_story.jpg";
+import iriyagama_housing from "./../images/projects/completed/iriyagama_housing.jpg";
+import dodamwala_three_story from "./../images/projects/completed/dodamwala_three_story.jpg";
+import mahaiyawa_2_story from "./../images/projects/completed/mahaiyawa_2_story.jpg";
+import lewella_2_story from "./../images/projects/completed/lewella_2_story.jpg";
+import aniwatta_2_story from "./../images/projects/completed/aniwatta_2_story.jpg";
+import kundasale_housing from "./../images/projects/completed/kundasale_housing.jpg";
+import katugastota_hotel from "./../images/projects/ongoing/katugastota_hotel.jpg";
+import kandy_school from "./../images/projects/ongoing/kandy-school.jpg";
+import ranawana_eco_2 from "./../images/projects/ongoing/ranawana-eco-2.jpg";
+import katugastota from "./../images/projects/ongoing/katugastota.jpg";
+import nugawela from "./../images/projects/ongoing/nugawela.jpg";
+import kurunegala from "./../images/projects/ongoing/kurunegala.jpg";
+import pinnawala from "./../images/projects/ongoing/pinnawala.jpg";
+import haragama from "./../images/projects/ongoing/haragama.jpg";
+import hantana_3 from "./../images/projects/ongoing/hantana-3.jpg";
+import digana from "./../images/projects/ongoing/digana.jpg";
+import balagolla from "./../images/projects/ongoing/balagolla.jpg";
+import polgolla from "./../images/projects/ongoing/polgolla.jpg";
+import aniwatte from "./../images/projects/ongoing/aniwatte.jpg";
+import gohagoda from "./../images/projects/ongoing/gohagoda.jpg";
+import international_school from "./../images/projects/ongoing/international-school.jpg";
+import balagolla_industrial_zone from "./../images/projects/ongoing/balagolla-industrial-zone.jpg";
+import mahaiyawa from "./../images/projects/ongoing/mahaiyawa.jpg";
+import thennekumbura from "./../images/projects/ongoing/thennekumbura.jpg";
+import udaperadeniya from "./../images/projects/ongoing/udaperadeniya.jpg";
+import rajapihilla_hotel from "./../images/projects/ongoing/rajapihilla-hotel.jpg";
+import ranawana_3 from "./../images/projects/ongoing/ranawana-3.jpg";
+import padiyapelella from "./../images/projects/ongoing/padiyapelella.jpg";
+import pallekele from "./../images/projects/ongoing/pallekele.jpg";
+import mapanawathura from "./../images/projects/ongoing/mapanawathura.jpg";
 
 function HomeSection3() {
   const scrollContainerRef = useRef(null);
@@ -48,6 +84,64 @@ function HomeSection3() {
       behavior: "smooth", // Smooth scroll animation
     });
   };
+
+  // completed projects array (for cards)
+  const completedProjects = [
+    ["Housing Project", haragama_housing, "Haragama"],
+    ["Housing Project", nuwara_eliya_housing, "Nuwara Eliya"],
+    ["Housing Project", housing_kandy, "Kandy City"],
+    ["Housing Project", abathenna_housing, "Abathenna"],
+    ["Kandy", wells_park_kandy, "Wells Park Site"],
+    ["Housing Project", ranawana_housing, "Ranawana"],
+    ["Housing Project", hantana_2_housing, "Hantana (Site 2)"],
+    ["Housing Project", katugastota_2_housing, "Katugastota (Site 2)"],
+    ["Housing Project", wattaranthenna_housing, "Wattaranthenna"],
+    ["Housing Project", nugawela_housing, "Nugawela"],
+    ["Housing Project", kengalla_housing, "Kengalla"],
+    ["Housing Project", hantana_1_housing, "Hantana (Site 1)"],
+    ["Eco-Friendly House", ranawana_eco_housing, "Ranawana"],
+    ["Housing Project", heerasgala_housing, "Heerassagala"],
+    ["Three Story House", nittabuwa_three_story, "Nittabuwa"],
+    ["Housing Project", iriyagama_housing, "Iriyagama"],
+    ["Three Story House", dodamwala_three_story, "Dodamwala"],
+    ["Two Story House", mahaiyawa_2_story, "Mahaiyawa"],
+    ["Two Story House", lewella_2_story, "Lewella"],
+    ["Two Story House", aniwatta_2_story, "Aniwatta"],
+    ["Housing Project", kundasale_housing, "Kundasale"],
+  ];
+
+  // ongoing projects array (for cards)
+  const ongoingProjects = [
+    ["A Hotel", katugastota_hotel, "Katugastota"],
+    ["A School Project", kandy_school, "Kandy"],
+    ["Eco Housing Project #2", ranawana_eco_2, "Ranawana"],
+    ["Housing Project", katugastota, "Katugastota"],
+    ["Construction Project", nugawela, "Nugawela"],
+    ["Construction Project", kurunegala, "Kurunegala"],
+    ["Housing Project", pinnawala, "Pinnawala"],
+    ["Housing Project", haragama, "Haragama"],
+    ["Housing Project 3", hantana_3, "Hantana"],
+    ["Housing Project", digana, "Digana"],
+    ["Housing Project", balagolla, "Balagolla"],
+    ["Housing Project", polgolla, "Polgolla"],
+    ["Housing Project", aniwatte, "Aniwatte"],
+    ["Housing Project", gohagoda, "Gohagoda"],
+    ["International School Project", international_school, "-"],
+    [
+      "Industrial Zone Building Project",
+      balagolla_industrial_zone,
+      "Balagolla",
+    ],
+    ["Housing Project", mahaiyawa, "Mahaiyawa"],
+    ["Housing Project", thennekumbura, "Thennekumbura"],
+    ["Housing Project", udaperadeniya, "Udaperadeniya"],
+    ["Hotel Construction Project", rajapihilla_hotel, "Rajapihilla Mawatha"],
+    ["Housing Project #3", ranawana_3, "Ranawana"],
+    ["Commercial Building Project", padiyapelella, "Padiyapelella"],
+    ["Commercial Building Project", pallekele, "Pallekele"],
+    ["Housing Project", mapanawathura, "Mapanawathura"],
+  ];
+
   return (
     <div className="flex items-center justify-center px-3 py-12">
       <div className="flex flex-col w-full gap-3">
@@ -110,102 +204,21 @@ function HomeSection3() {
           ref={scrollContainerRef}
         >
           <span className="flex gap-5 py-3 w-fit">
-            <CardType1
-              cardHeader={"Housing Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Haragama"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_1}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Housing Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Haragama"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_2}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Housing Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Kandy City"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_3}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Housing Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Abathenna"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_4}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Wells Park Site"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Kandy"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_5}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Housing Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Ranawana"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_6}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Housing Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Hantana (Site 2)"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_7}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Housing Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Katugastota (Site 2)"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_8}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
+            {completedProjects.map((project, index) => (
+              <CardType1
+                key={index}
+                cardHeader={project[0]}
+                cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
+                cardText1={project[2]}
+                cardText1Classes={
+                  "uppercase text-xs g-font-2 tracking-widest p-1"
+                }
+                cardImage={project[1]}
+                cardImageClasses={"h-[400px]"}
+                btnText={"nobtn"}
+                extraClasses={"w-[300px] h-fit py-1 gap-3"}
+              />
+            ))}
           </span>
         </div>
         <span className="flex items-center justify-between">
@@ -263,54 +276,21 @@ function HomeSection3() {
           ref={scrollContainerRef2}
         >
           <span className="flex gap-5 py-3 w-fit">
-            <CardType1
-              cardHeader={"Housing Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Haragama"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_1}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Commercial Building"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Pallekale"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_9}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Hotel Construction Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Rajapihilla Mawatha"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_10}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
-            <CardType1
-              cardHeader={"Industrial Zone Building Project"}
-              cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
-              cardText1={"Balagolla"}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
-              }
-              cardImage={proj_11}
-              cardImageClasses={"h-[400px]"}
-              btnText={"nobtn"}
-              extraClasses={"w-[300px] h-fit py-1 gap-3"}
-            />
+            {ongoingProjects.map((project, index) => (
+              <CardType1
+                key={index}
+                cardHeader={project[0]}
+                cardHeaderClasses={"text-2xl max-xl:text-xl max-lg:text-lg"}
+                cardText1={project[2]}
+                cardText1Classes={
+                  "uppercase text-xs g-font-2 tracking-widest p-1"
+                }
+                cardImage={project[1]}
+                cardImageClasses={"h-[400px]"}
+                btnText={"nobtn"}
+                extraClasses={"w-[300px] h-fit py-1 gap-3"}
+              />
+            ))}
           </span>
         </div>
       </div>

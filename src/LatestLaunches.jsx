@@ -670,7 +670,7 @@ export default function Projects() {
                 <h1 className="text-3xl font-semibold uppercase">
                   {project[0]}
                 </h1>
-                <p className="w-full g-font-1">{project[2]}</p>
+                <p className="hidden w-full g-font-1">{project[2]}</p>
                 <Button
                   displayText={"View More Details"}
                   theme={"dark"}
@@ -685,7 +685,7 @@ export default function Projects() {
             </div>
           </div>
         ))}
-        {/*ongoing map needed!!*/}
+        {/*ongoing map*/}
         {ongoingProjects.map((project, index) => (
           <div
             key={index + 21}
@@ -706,7 +706,7 @@ export default function Projects() {
                 <h1 className="text-3xl font-semibold uppercase">
                   {project[0]}
                 </h1>
-                <span>
+                <span className="hidden">
                   <p className="w-full g-font-1">{project[2]}</p>
                 </span>
                 <span className="flex gap-2 max-lg:flex-col">
