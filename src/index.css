@@ -55,6 +55,10 @@ code {
     monospace;
 }
 
+.line-height-lg{
+  line-height: 30px;
+}
+
 .optima-reg {
   font-family: "optima-reg", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
