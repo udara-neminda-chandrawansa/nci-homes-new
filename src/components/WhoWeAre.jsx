@@ -12,10 +12,10 @@ function WhoWeAre() {
           <img
             src={logo}
             alt="logo"
-            className="object-cover w-full h-full rounded-lg max-md:max-h-[300px] max-md:object-contain max-md:object-top"
+            className="w-full h-[300px] rounded-lg max-md:max-h-[300px] object-contain"
           />
         </div>
-        <div className="flex flex-col gap-6 justify-evenly md:w-2/3">
+        <div className="flex flex-col justify-center gap-4 gap-6 md:w-2/3">
           <h1 className="text-5xl md:text-start poltawski max-md:text-3xl max-md:text-center">
             Who We Are
           </h1>
