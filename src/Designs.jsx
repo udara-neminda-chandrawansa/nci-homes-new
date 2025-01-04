@@ -123,7 +123,7 @@ export default function Designs() {
           ))}
         </div>
 
-        <Footer></Footer>
+        
         {/*image modal*/}
         <dialog id="my_modal_3" className="modal">
           <div className="w-11/12 max-w-5xl modal-box">
@@ -137,6 +137,7 @@ export default function Designs() {
           </div>
         </dialog>
       </div>
+      <Footer></Footer>
     </>
   );
 } //

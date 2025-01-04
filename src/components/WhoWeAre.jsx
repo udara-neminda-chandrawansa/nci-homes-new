@@ -17,17 +17,19 @@ function WhoWeAre() {
             className="w-full h-[300px] rounded-lg max-md:max-h-[300px] object-contain"
           />
         </div>
-        <div className="flex flex-col justify-center gap-6 md:w-2/3 bg-cover bg-bottom text-white shadow-inner px-4" style={{ backgroundImage: `url(${bg})` }}>
-          <h1 className="text-5xl md:text-start poltawski max-md:text-3xl max-md:text-center">
+        <div className="relative flex flex-col justify-center gap-6 md:w-2/3 bg-cover bg-bottom text-white shadow-inner p-4" style={{ backgroundImage: `url(${bg})` }}>
+        {/*Top layer (backdrop)*/}
+        <div className="absolute bottom-0 inset-0 bg-gradient-to-br from-[#4B4B4BB5] to-[#000000B5]"></div>
+          <h1 className="text-5xl z-10 md:text-start poltawski max-md:text-3xl max-md:text-center">
             Who We Are
           </h1>
-          <div>
+          <div className=" z-10">
             <p className="text-justify max-sm:text-sm">
               NCI Homes Private Limited is a well-established <strong>Civil Engineering </strong>
               and <strong>Construction</strong> company located in Kandy-Sri Lanka.
             </p>
           </div>
-          <div>
+          <div className=" z-10">
             <p className="text-justify max-sm:text-sm">
               In last two decades we have earned its reputation as a creative
               and innovative construction institution that offers high quality
