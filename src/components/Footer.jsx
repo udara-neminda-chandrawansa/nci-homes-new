@@ -146,25 +146,27 @@ function Footer() {
         </div>
       </div>
       {/*row 2*/}
-      <div className="flex justify-between max-[992px]:flex-col gap-4 items-start">
-        <div className="flex gap-10 h-full items-center w-4/5 max-[992px]:px-4 max-[992px]:w-full max-[992px]:pb-4">
-          <img src={logo} alt="logo" className="h-[250px]"></img>
-          <div className="flex flex-col justify-center h-[250px] gap-4">
-            <p className="flex justify-between items-center w-full uppercase g-font-3 text-xs tracking-widest py-3 max-[992px]:text-sm cursor-pointer">
-              About us
-            </p>
-
-            <div
-              className={`flex max-[992px]:flex-col transition-all items-center duration-300 overflow-hidden`}
-            >
-              <p className="pt-1 text-sm font-semibold uppercase g-font-1 line-height-lg">
-                We have over 22 years of experience in building and home
-                constructions, planning, designing, landscaping and all kinds of
-                civil engineering services. In last two decades we have earned
-                our reputation as a creative and innovative construction
-                institution that offers high quality construction services in
-                Sri Lanka.
+      <div className="flex h-[400px] max-[992px]:h-fit justify-between max-[992px]:flex-col gap-4 items-start">
+        <div className="flex h-full items-center w-4/5 max-[992px]:px-4 max-[992px]:flex-col max-[992px]:w-full max-[992px]:pb-4">
+          <div className="gap-10 max-[992px]:gap-4 max-[992px]:flex-col flex h-full items-center">
+            <img src={logo} alt="logo" className="h-[300px] max-xl:h-[200px]"></img>
+            <div className="flex flex-col justify-center py-4 max-[992px]:py-0 gap-4 h-full">
+              <p className="flex justify-between items-center w-full uppercase g-font-3 text-xs tracking-widest py-3 max-[992px]:text-sm cursor-pointer">
+                About us
               </p>
+
+              <div
+                className={`flex max-[992px]:flex-col transition-all items-center duration-300 overflow-hidden`}
+              >
+                <p className="pt-1 text-sm font-semibold uppercase g-font-1 line-height-lg max-[992px]:text-center">
+                  We have over 22 years of experience in building and home
+                  constructions, planning, designing, landscaping and all kinds
+                  of civil engineering services. In last two decades we have
+                  earned our reputation as a creative and innovative
+                  construction institution that offers high quality construction
+                  services in Sri Lanka.
+                </p>
+              </div>
             </div>
           </div>
         </div>
