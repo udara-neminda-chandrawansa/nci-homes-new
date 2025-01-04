@@ -175,10 +175,10 @@ function Footer() {
           <div
             className={`flex max-[992px]:flex-col transition-all duration-300 overflow-hidden`}
           >
-            <ul className="flex flex-col w-full gap-4 pt-3 text-xs tracking-widest g-font-1">
+            <ul className="flex flex-col w-full gap-4 pt-3 text-xs tracking-widest g-font-1 text-left">
               <li>Address:</li>
               <li>NCI BUILDING</li>
-              <li>No. 381 A,Katugastota Road,Kandy</li>
+              <li className=" text-left">No. 381 A,Katugastota Road,Kandy</li>
               <li className="mt-3">Phone No:</li>
               <li className="transition-all delay-75 hover:text-blue-300">
                 <a href="tel:812213613">+94 81 221 3613</a>
@@ -193,7 +193,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="h-full hidden w-1/5 max-[992px]:px-4 pt-4 max-[992px]:w-full max-[992px]:pb-4 max-[992px]:border-b-[1px]">
+        <div className="h-full w-1/5 max-[992px]:px-4 pt-4 max-[992px]:w-full max-[992px]:pb-4 max-[992px]:border-b-[1px]">
           <p
             className="flex justify-between items-center w-full uppercase g-font-3 text-xs tracking-widest py-3 max-[992px]:text-sm cursor-pointer"
             onClick={() => toggleSection("extraLinks")}
