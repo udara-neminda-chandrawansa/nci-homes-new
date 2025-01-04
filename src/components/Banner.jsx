@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import Button from "./Button";
 import Nav from "./Nav";
 
+import banner_1 from "./../images/landing/banner/banner_1.jpg";
+import banner_2 from "./../images/landing/banner/banner_2.jpg";
+import banner_3 from "./../images/landing/banner/banner_6.jpg";
+
 export default function Banner() {
   //
   // Carousel Logic
@@ -26,7 +30,7 @@ export default function Banner() {
           updateAllItems([
             "Build Your Dream With Us",
             "Crafting Homes with Precision",
-            "bg-banner-1",
+            banner_1,
           ]);
           break;
         case 2:
@@ -34,7 +38,7 @@ export default function Banner() {
           updateAllItems([
             "Build Your Dream With Us",
             "Solid Foundations for Your Projects",
-            "bg-banner-2",
+            banner_2,
           ]);
           break;
         case 3:
@@ -42,7 +46,7 @@ export default function Banner() {
           updateAllItems([
             "Build Your Dream With Us",
             "Efficient Storage, Built Right",
-            "bg-banner-6",
+            banner_3,
           ]);
           break;
         default:
@@ -57,7 +61,7 @@ export default function Banner() {
   const [items, setItems] = useState([
     "HOUSING CONSTRUCTIONS",
     "Crafting Homes With Precision",
-    "bg-banner-1",
+    banner_1,
   ]); // carousel array
 
   // Automate the carousel switching logic
@@ -79,7 +83,8 @@ export default function Banner() {
 
   return (
     <div
-      className={`w-full flex flex-col justify-between p-1 h-[100dvh] bg-cover ${items[2]} text-white`}
+      className={`w-full flex flex-col justify-between p-1 h-[100dvh] bg-cover text-white`}
+      style={{ backgroundImage: `url(${items[2]})` }}
     >
       <Nav theme={"dark"} bgColor={"white"} textColor={"black"}></Nav>
       {/*shadow*/}
