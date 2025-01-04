@@ -1,4 +1,6 @@
 import choose_us_img from "./../images/landing/choose_us_img.png";
+import bg from "./../images/landing/why choose us bg.jpg";
+
 function HomeSection2New(){
     return(
         <div>{/*why choose us*/}
@@ -14,7 +16,7 @@ function HomeSection2New(){
               className="object-cover w-full h-full rounded-lg max-md:max-h-[300px] max-md:object-contain max-md:object-top"
             />
           </div>
-          <div className="flex flex-col gap-6 justify-evenly md:w-2/3">
+          <div className="flex flex-col gap-6 justify-evenly md:w-2/3 bg-cover px-4" style={{ backgroundImage: `url(${bg})` }}>
             <h1 className="text-5xl md:text-start poltawski max-md:text-3xl max-md:text-center">
               Why Choose Us
             </h1>

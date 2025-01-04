@@ -52,13 +52,6 @@ function Footer() {
         {/*logo + social*/}
         <div className="flex w-3/5 max-[992px]:w-full">
           <div className="flex w-1/2 max-[992px]:w-full">
-            {/*logo*/}
-            <div className="w-1/2 flex items-center max-[992px]:w-fit">
-              <h1 className="tracking-tighter text-gray-700 cursor-pointer h-fit">
-                <img src={logo} alt="logo" className="h-8"></img>
-              </h1>
-              <span className="border-l-gray-400 border-l ml-11 h-[40px]"></span>
-            </div>
             {/*social media icons*/}
             <div className="w-1/2 flex gap-3 items-center max-[992px]:pl-4 max-md:w-fit">
               Follow Us On
@@ -153,22 +146,29 @@ function Footer() {
         </div>
       </div>
       {/*row 2*/}
-      <div className="flex h-fit max-[992px]:flex-col gap-4">
-        <div className="h-full w-1/2  max-[992px]:px-4 pt-4 max-[992px]:w-full max-[992px]:pb-4">
-          <p className="flex justify-between items-center w-full uppercase g-font-3 text-xs tracking-widest py-3 max-[992px]:text-sm cursor-pointer">
-            About us
-          </p>
-          <div
-            className={`flex max-[992px]:flex-col transition-all duration-300 overflow-hidden`}
-          >
-            <p className="pt-1 text-xs tracking-widest uppercase g-font-1 line-height-lg">
-              We have over 22 years of experience in building and home
-              constructions, planning, designing, landscaping and all kinds of
-              civil engineering services.
+      <div className="flex justify-between max-[992px]:flex-col gap-4 items-start">
+        <div className="flex gap-10 h-full items-center w-4/5 max-[992px]:px-4 max-[992px]:w-full max-[992px]:pb-4">
+          <img src={logo} alt="logo" className="h-[250px]"></img>
+          <div className="flex flex-col justify-center h-[250px] gap-4">
+            <p className="flex justify-between items-center w-full uppercase g-font-3 text-xs tracking-widest py-3 max-[992px]:text-sm cursor-pointer">
+              About us
             </p>
+
+            <div
+              className={`flex max-[992px]:flex-col transition-all items-center duration-300 overflow-hidden`}
+            >
+              <p className="pt-1 text-sm font-semibold uppercase g-font-1 line-height-lg">
+                We have over 22 years of experience in building and home
+                constructions, planning, designing, landscaping and all kinds of
+                civil engineering services. In last two decades we have earned
+                our reputation as a creative and innovative construction
+                institution that offers high quality construction services in
+                Sri Lanka.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="h-full w-1/4  max-[992px]:px-4 pt-4 max-[992px]:w-full max-[992px]:pb-4">
+        <div className="h-full w-1/5  max-[992px]:px-4 pt-4 max-[992px]:w-full max-[992px]:pb-4">
           <p className="flex justify-between items-center w-full uppercase g-font-3 text-xs tracking-widest py-3 max-[992px]:text-sm cursor-pointer">
             Contact Details
           </p>
@@ -193,7 +193,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="h-full w-1/4  max-[992px]:px-4 pt-4 max-[992px]:w-full max-[992px]:pb-4 max-[992px]:border-b-[1px]">
+        <div className="h-full hidden w-1/5 max-[992px]:px-4 pt-4 max-[992px]:w-full max-[992px]:pb-4 max-[992px]:border-b-[1px]">
           <p
             className="flex justify-between items-center w-full uppercase g-font-3 text-xs tracking-widest py-3 max-[992px]:text-sm cursor-pointer"
             onClick={() => toggleSection("extraLinks")}
@@ -248,15 +248,15 @@ function Footer() {
         </div>
       </div>
       {/*row 4*/}
-      <div className="flex bg-white h-fit">
+      <div className="flex bg-blue-950 text-white h-fit">
         <ul className="flex px-4 py-5 max-[992px]:px-0 justify-center gap-6 w-full uppercase g-font-1 tracking-widest text-xs max-md:flex-col max-md:px-4 max-md:pb-8 max-[992px]:w-full">
-          <li className="py-1 transition-all delay-75 hover:text-blue-300 w-fit">
-            2024 © all rights reserved
+          <li className="py-1 transition-all delay-75 w-fit">
+            2025 © all rights reserved
           </li>
-          <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none hover:text-blue-300 delay-75 transition-all w-fit">
+          <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none delay-75 transition-all w-fit">
             NCI Homes (Pvt) Ltd
           </li>
-          <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none hover:text-blue-300 delay-75 transition-all w-fit">
+          <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none delay-75 transition-all w-fit">
             designed & developed by Silicon Radon Networks (Pvt) Ltd
           </li>
         </ul>

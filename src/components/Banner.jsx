@@ -41,30 +41,6 @@ export default function Banner() {
           // code
           updateAllItems([
             "Build Your Dream With Us",
-            "Luxury Spaces for Hospitality",
-            "bg-banner-3",
-          ]);
-          break;
-        case 4:
-          // code
-          updateAllItems([
-            "Build Your Dream With Us",
-            "Elegant Villas, Tailored for You",
-            "bg-banner-4",
-          ]);
-          break;
-        case 5:
-          // code
-          updateAllItems([
-            "Build Your Dream With Us",
-            "Cozy Retreats by Design",
-            "bg-banner-5",
-          ]);
-          break;
-        case 6:
-          // code
-          updateAllItems([
-            "Build Your Dream With Us",
             "Efficient Storage, Built Right",
             "bg-banner-6",
           ]);
@@ -87,7 +63,7 @@ export default function Banner() {
   // Automate the carousel switching logic
   useEffect(() => {
     let currentCarNum = 1; // Start with the first carousel item
-    const totalCarItems = 6; // Total number of carousel items
+    const totalCarItems = 3; // Total number of carousel items
 
     const carouselInterval = setInterval(() => {
       handleCarousel(currentCarNum); // Call the existing handleCarousel function
@@ -204,39 +180,7 @@ export default function Banner() {
                 noPadding={true}
               />
             </div>
-            <div
-              className="z-10 w-4 h-4 bg-white rounded car-btn"
-              id="car-btn-4"
-            >
-              <Button
-                theme="transparent"
-                onClick={() => handleCarousel(4)}
-                width="full"
-                noPadding={true}
-              />
-            </div>
-            <div
-              className="z-10 w-4 h-4 bg-white rounded car-btn"
-              id="car-btn-5"
-            >
-              <Button
-                theme="transparent"
-                onClick={() => handleCarousel(5)}
-                width="full"
-                noPadding={true}
-              />
-            </div>
-            <div
-              className="z-10 w-4 h-4 bg-white rounded car-btn"
-              id="car-btn-6"
-            >
-              <Button
-                theme="transparent"
-                onClick={() => handleCarousel(6)}
-                width="full"
-                noPadding={true}
-              />
-            </div>
+            
           </div>
         </div>
       </div>
