@@ -7,7 +7,7 @@ import card_4 from "../images/services/card_4.png";
 
 function HomeSection1() {
   return (
-    <div className="flex flex-col items-start gap-6 px-3 py-6">
+    <div className="flex flex-col items-start gap-3 px-3 pb-3">
       <span className="flex items-center gap-5 text-xs tracking-widest text-gray-600 uppercase g-font-2">
         Services
         <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
