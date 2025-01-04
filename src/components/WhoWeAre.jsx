@@ -10,7 +10,7 @@ function WhoWeAre() {
         <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
       </span>
       <div className="flex gap-6 p-3 max-md:flex-col">
-        <div className="md:w-1/3 bg-blue-200 p-4">
+        <div className="md:w-1/3 p-4">
           <img
             src={logo}
             alt="logo"

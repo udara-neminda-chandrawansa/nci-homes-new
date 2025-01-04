@@ -132,7 +132,7 @@ const gohagoda_grid = import.meta.glob(
   "./images/projects/ongoing/gohagoda/*.{png,jpg,jpeg,svg}"
 ); //
 
-export default function Projects() {
+export default function Projects({projType}) {
   // filter proj type
   const handleLaunchFilter = (Filter) => {
     const launchSpans = document.querySelectorAll(".launch-span");
@@ -599,6 +599,17 @@ export default function Projects() {
     loadGohagodaImages(); //
   }, []);
 
+  // useEffet for pressing filter buttons on load
+  useEffect(() => {
+    // Select the button based on projType
+    const buttonId = `launchSpan-${projType}`;
+    const button = document.getElementById(buttonId);
+
+    if (button) {
+      button.click(); // Simulate a button press
+    }
+  }, [projType]);
+
   return (
     <>
       <div className="flex w-full">
@@ -648,7 +659,7 @@ export default function Projects() {
         </div>
       </div>
       {/*card container*/}
-      <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 w-full gap-4 px-4 max-lg:h-full">
+      <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full gap-4 px-4 max-lg:h-full">
         {/*completed map*/}
         {completedProjects.map((project, index) => (
           <div

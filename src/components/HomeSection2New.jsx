@@ -18,11 +18,8 @@ function HomeSection2New() {
           />
         </div>
         <div
-          className="relative flex flex-col gap-6 justify-evenly md:w-2/3 bg-cover p-4 text-white"
-          style={{ backgroundImage: `url(${bg})` }}
+          className="relative flex flex-col gap-6 justify-evenly md:w-2/3"
         >
-          {/*Top layer (backdrop)*/}
-          <div className="absolute bottom-0 inset-0 bg-gradient-to-br from-[#4B4B4BB5] to-[#000000B5]"></div>
           <h1 className="z-10 text-5xl md:text-start poltawski max-md:text-3xl max-md:text-center">
             Why Choose Us
           </h1>

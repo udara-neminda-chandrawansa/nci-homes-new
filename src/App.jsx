@@ -55,6 +55,9 @@ export default function App() {
           <Route path="/" component={Landing} />
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
+          <Route path="/projects/:projType">
+            {(params) => <Projects projType={params.projType} />}
+          </Route>
           <Route path="/services" component={Services} />
           <Route path="/contact" component={ContactUs} />
           <Route path="/designs" component={Designs} />

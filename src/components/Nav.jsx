@@ -37,14 +37,21 @@ export default function Nav({
             onClick={handleOpening}
           />
         </span>
-        <h2 className="flex items-center px-6 text-3xl">
+        <h2 className="flex items-center sm:px-3 text-3xl">
           <Link href="/">
-            <img src={logo} alt="logo" className="h-8"></img>
+            <img src={logo} alt="logo" className="h-12 object-contain"></img>
           </Link>
         </h2>
         <ul
-          className={`flex gap-5 p-5 text-xs tracking-wider uppercase optima-bold max-lg:hidden text-${textColor}`}
+          className={`flex gap-5 p-5 text-sm tracking-wider uppercase optima-bold max-lg:hidden text-${textColor}`}
         >
+          <li>
+            <Link href="/">
+              <p className="p-1 underline-offset-[20px] hover:underline">
+                Home
+              </p>
+            </Link>
+          </li>
           <li>
             <Link href="/about">
               <p className="p-1 underline-offset-[20px] hover:underline">
@@ -53,7 +60,7 @@ export default function Nav({
             </Link>
           </li>
           <li>
-            <Link href="/projects">
+            <Link href="/projects/1">
               <p className="p-1 underline-offset-[20px] hover:underline">
                 Projects
               </p>{" "}
@@ -127,7 +134,7 @@ export default function Nav({
             </a>
           </li>
           <li>
-            <a href="https://wa.me/94777860950" className="flex p-1">
+            <a href="https://wa.me/94777860950" className="flex p-2 scale-150">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
