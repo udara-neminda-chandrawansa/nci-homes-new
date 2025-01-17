@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-function CardType1({
+function CardType4({
   cardHeader,
   cardHeaderClasses,
   cardText1,
@@ -17,7 +17,7 @@ function CardType1({
     <div
       className={`flex flex-col items-center justify-between ${extraClasses}`}
     >
-      <span className={`w-full overflow-hidden h-1/2 group`}>
+      <span className={`w-full overflow-hidden h-3/5 group`}>
         <img
           className={`w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110 ${cardImageClasses}`}
           src={cardImage}
@@ -28,7 +28,7 @@ function CardType1({
         {cardHeader}
       </h1>
       <span className="flex flex-col">
-        <p className={`text-center text-gray-500 ${cardText1Classes}`}>
+        <p className={`text-center text-gray-300 ${cardText1Classes}`}>
           {cardText1}
         </p>
         <p className={`text-center text-gray-600 ${cardText2Classes}`}>
@@ -49,4 +49,4 @@ function CardType1({
   );
 }
 
-export default CardType1;
+export default CardType4;

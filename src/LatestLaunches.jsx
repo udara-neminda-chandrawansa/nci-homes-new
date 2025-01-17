@@ -696,7 +696,7 @@ export default function Projects({ projType }) {
                 onClick={() => handleLaunchFilter(3)} // Wrap in an arrow function
                 className="launch-span cursor-pointer flex justify-center text-blue-900 bg-white border-[1px] border-gray-400 uppercase g-font-2 font-semibold text-xs tracking-widest p-3 px-8 rounded-full min-w-[100px]"
               >
-                Ongoing Projects (24)
+                Ongoing Projects (25)
               </span>
             </div>
           </div>

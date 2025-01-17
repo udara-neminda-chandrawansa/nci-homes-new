@@ -3,7 +3,7 @@ import bg from "./../images/landing/why choose us bg.jpg";
 
 function HomeSection2New() {
   return (
-    <div className="pb-3">
+    <div className="pb-0">
       {/*why choose us*/}
       <span className="flex items-center gap-3 pl-3 text-xs tracking-widest text-gray-600 uppercase g-font-2">
         Our Uniqueness

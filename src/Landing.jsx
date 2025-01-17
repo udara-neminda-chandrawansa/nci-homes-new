@@ -42,7 +42,7 @@ export default function Landing() {
       <HomeSection1 />
       <HomeSection2New />
       <HomeSection3 />
-      <div className="flex items-center justify-between gap-6 px-12 py-6 max-md:px-3 border-y max-md:flex-col">
+      <div className="flex items-center justify-between gap-6 px-12 py-6 mt-6 max-md:px-3 border-y max-md:flex-col">
         <div>
           <p className="text-xl font-semibold uppercase max-md:text-center max-xl:text-lg max-lg:text-base">
             we are ready to hear from you!
