@@ -48,6 +48,7 @@ import ranawana_3 from "./../images/projects/ongoing/ranawana-3.jpg";
 import padiyapelella from "./../images/projects/ongoing/padiyapelella.jpg";
 import pallekele from "./../images/projects/ongoing/pallekele.jpg";
 import mapanawathura from "./../images/projects/ongoing/mapanawathura.jpg";
+import gunawardana from "./../images/projects/ongoing/gunawardana.jpg";
 
 function HomeSection3() {
   const scrollContainerRef = useRef(null);
@@ -140,6 +141,7 @@ function HomeSection3() {
     ["Commercial Building Project", padiyapelella, "Padiyapelella"],
     ["Commercial Building Project", pallekele, "Pallekele"],
     ["Housing Project", mapanawathura, "Mapanawathura"],
+    ["Mr. Gunawardana's Project", gunawardana, "-"],
   ];
 
   return (

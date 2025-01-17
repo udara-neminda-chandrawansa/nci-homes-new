@@ -123,3 +123,30 @@ code {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
 }
+
+.vintage-green img{
+  filter: sepia(0.5) hue-rotate(50deg);
+}
+
+.image-overlay-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(139, 69, 19, 0.5), rgba(34, 139, 34, 0.5));
+  mix-blend-mode: overlay; /* Ensures overlay effect blends with the image */
+  pointer-events: none; /* Keeps the overlay non-interactive */
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay-container:hover::after {
+  opacity: 0.8; /* Increases visibility of overlay on hover */
+}

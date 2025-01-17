@@ -52,6 +52,7 @@ import ranawana_3 from "./images/projects/ongoing/ranawana-3.jpg";
 import padiyapelella from "./images/projects/ongoing/padiyapelella.jpg";
 import pallekele from "./images/projects/ongoing/pallekele.jpg";
 import mapanawathura from "./images/projects/ongoing/mapanawathura.jpg";
+import gunawardana from "./images/projects/ongoing/gunawardana.jpg";
 
 // image galleries of completed projects
 const hara_hou_grid = import.meta.glob(
@@ -131,8 +132,17 @@ const aniwatte_grid = import.meta.glob(
 const gohagoda_grid = import.meta.glob(
   "./images/projects/ongoing/gohagoda/*.{png,jpg,jpeg,svg}"
 ); //
+const kurunegala_grid = import.meta.glob(
+  "./images/projects/ongoing/kurunegala/*.{png,jpg,jpeg,svg}"
+); //
+const balagolla_grid = import.meta.glob(
+  "./images/projects/ongoing/balagolla/*.{png,jpg,jpeg,svg}"
+); //
+const gunawardana_grid = import.meta.glob(
+  "./images/projects/ongoing/gunawardana/*.{png,jpg,jpeg,svg}"
+); //
 
-export default function Projects({projType}) {
+export default function Projects({ projType }) {
   // filter proj type
   const handleLaunchFilter = (Filter) => {
     const launchSpans = document.querySelectorAll(".launch-span");
@@ -288,6 +298,7 @@ export default function Projects({projType}) {
     ],
     ["Pallekele Commercial Building Project", pallekele, "Project Description"],
     ["Mapanawathura Housing Project", mapanawathura, "Project Description"],
+    ["Mr. Gunawardana's Project", gunawardana, "Project Description"],
   ];
 
   // completed proj gallery array (for modal)
@@ -327,6 +338,9 @@ export default function Projects({projType}) {
   const [polgollaImages, setPolgollaImages] = useState([]);
   const [aniwatteImages, setAniwatteImages] = useState([]);
   const [gohagodaImages, setGohagodaImages] = useState([]);
+  const [kurunegalaImages, setKurunegalaImages] = useState([]);
+  const [balagollaImages, setBalagollaImages] = useState([]);
+  const [gunawardanaImages, setGunawardanaImages] = useState([]);
 
   // use effect for auto loading *
   useEffect(() => {
@@ -597,6 +611,36 @@ export default function Projects({projType}) {
     };
 
     loadGohagodaImages(); //
+
+    // Load kurunegala_grid images //
+    const loadKurunegalaImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(kurunegala_grid).map((key) => kurunegala_grid[key]())
+      );
+      setKurunegalaImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadKurunegalaImages(); //
+
+    // Load balagolla_grid images //
+    const loadBalagollaImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(balagolla_grid).map((key) => balagolla_grid[key]())
+      );
+      setBalagollaImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadBalagollaImages(); //
+
+    // Load gunawardana_grid images //
+    const loadGunawardanaImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(gunawardana_grid).map((key) => gunawardana_grid[key]())
+      );
+      setGunawardanaImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadGunawardanaImages(); //
   }, []);
 
   // useEffet for pressing filter buttons on load
@@ -659,17 +703,17 @@ export default function Projects({projType}) {
         </div>
       </div>
       {/*card container*/}
-      <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 w-full gap-4 px-4 max-lg:h-full">
+      <div className="grid w-full grid-cols-4 gap-4 px-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-lg:h-full">
         {/*completed map*/}
         {completedProjects.map((project, index) => (
           <div
-            className="relative group coming-soon bg-gray-300 overflow-hidden"
+            className="relative overflow-hidden bg-gray-300 group coming-soon vintage-green"
             key={index}
           >
             <img
               src={project[1]}
               alt={project[1]}
-              className="w-full h-full object-cover"
+              className="object-cover w-full h-full"
             />
 
             <div
@@ -677,8 +721,8 @@ export default function Projects({projType}) {
       opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out 
       group-hover:inset-[10px]"
             >
-              <div className="flex flex-col justify-center items-center gap-5">
-                <h1 className="text-xl font-semibold uppercase text-center">
+              <div className="flex flex-col items-center justify-center gap-5">
+                <h1 className="text-xl font-semibold text-center uppercase">
                   {project[0]}
                 </h1>
                 <p className="hidden w-full g-font-1">{project[2]}</p>
@@ -699,38 +743,38 @@ export default function Projects({projType}) {
         {/*ongoing map*/}
         {ongoingProjects.map((project, index) => (
           <div
-          className="relative group now-available bg-gray-300 overflow-hidden"
-          key={index+21}
-        >
-          <img
-            src={project[1]}
-            alt={project[1]}
-            className="w-full h-full object-cover"
-          />
+            className="relative overflow-hidden bg-gray-300 group now-available vintage-green"
+            key={index + 21}
+          >
+            <img
+              src={project[1]}
+              alt={project[1]}
+              className="object-cover w-full h-full"
+            />
 
-          <div
-            className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-semibold 
+            <div
+              className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-semibold 
     opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out 
     group-hover:inset-[10px]"
-          >
-            <div className="flex flex-col justify-center items-center gap-5">
-              <h1 className="text-xl font-semibold uppercase text-center">
-                {project[0]}
-              </h1>
-              <p className="hidden w-full g-font-1">{project[2]}</p>
-              <Button
-                displayText={"View More Details"}
-                theme={"dark"}
-                extraClasses={"text-xs"}
-                onClick={() => {
-                  setSelectedProject(index+21);
-                  document.getElementById("my_modal_3").showModal();
-                }}
-                width={"fit"}
-              ></Button>
+            >
+              <div className="flex flex-col items-center justify-center gap-5">
+                <h1 className="text-xl font-semibold text-center uppercase">
+                  {project[0]}
+                </h1>
+                <p className="hidden w-full g-font-1">{project[2]}</p>
+                <Button
+                  displayText={"View More Details"}
+                  theme={"dark"}
+                  extraClasses={"text-xs"}
+                  onClick={() => {
+                    setSelectedProject(index + 21);
+                    document.getElementById("my_modal_3").showModal();
+                  }}
+                  width={"fit"}
+                ></Button>
+              </div>
             </div>
           </div>
-        </div>
         ))}
         {/*image modal*/}
         <dialog id="my_modal_3" className="modal">
@@ -741,7 +785,7 @@ export default function Projects({projType}) {
                 ✕
               </button>
             </form>
-            <div className="grid grid-cols-3 gap-6 pt-6 max-md:grid-cols-2 max-sm:grid-cols-1">
+            <div className="grid grid-cols-3 gap-6 pt-6 max-md:grid-cols-2 max-sm:grid-cols-1 vintage-green">
               {selectedProject === 0
                 ? haraHouseImages.map((image, index) => (
                     <img
@@ -967,8 +1011,8 @@ export default function Projects({projType}) {
                                                               )
                                                             )
                                                           : selectedProject ===
-                                                              32
-                                                            ? polgollaImages.map(
+                                                              26
+                                                            ? kurunegalaImages.map(
                                                                 (
                                                                   src,
                                                                   index
@@ -976,14 +1020,14 @@ export default function Projects({projType}) {
                                                                   <img
                                                                     key={index}
                                                                     src={src}
-                                                                    alt={`Polgolla Image ${index}`}
+                                                                    alt={`Kurunegala Image ${index}`}
                                                                     className="h-[300px] w-full object-cover"
                                                                   />
                                                                 )
                                                               )
                                                             : selectedProject ===
-                                                                33
-                                                              ? aniwatteImages.map(
+                                                                31
+                                                              ? balagollaImages.map(
                                                                   (
                                                                     src,
                                                                     index
@@ -993,14 +1037,14 @@ export default function Projects({projType}) {
                                                                         index
                                                                       }
                                                                       src={src}
-                                                                      alt={`Aniwatte Image ${index}`}
+                                                                      alt={`Balagolla Image ${index}`}
                                                                       className="h-[300px] w-full object-cover"
                                                                     />
                                                                   )
                                                                 )
                                                               : selectedProject ===
-                                                                  34
-                                                                ? gohagodaImages.map(
+                                                                  32
+                                                                ? polgollaImages.map(
                                                                     (
                                                                       src,
                                                                       index
@@ -1012,14 +1056,71 @@ export default function Projects({projType}) {
                                                                         src={
                                                                           src
                                                                         }
-                                                                        alt={`Gohagoda Image ${index}`}
+                                                                        alt={`Polgolla Image ${index}`}
                                                                         className="h-[300px] w-full object-cover"
                                                                       />
                                                                     )
                                                                   )
-                                                                : ""}
+                                                                : selectedProject ===
+                                                                    33
+                                                                  ? aniwatteImages.map(
+                                                                      (
+                                                                        src,
+                                                                        index
+                                                                      ) => (
+                                                                        <img
+                                                                          key={
+                                                                            index
+                                                                          }
+                                                                          src={
+                                                                            src
+                                                                          }
+                                                                          alt={`Aniwatte Image ${index}`}
+                                                                          className="h-[300px] w-full object-cover"
+                                                                        />
+                                                                      )
+                                                                    )
+                                                                  : selectedProject ===
+                                                                      34
+                                                                    ? gohagodaImages.map(
+                                                                        (
+                                                                          src,
+                                                                          index
+                                                                        ) => (
+                                                                          <img
+                                                                            key={
+                                                                              index
+                                                                            }
+                                                                            src={
+                                                                              src
+                                                                            }
+                                                                            alt={`Gohagoda Image ${index}`}
+                                                                            className="h-[300px] w-full object-cover"
+                                                                          />
+                                                                        )
+                                                                      )
+                                                                    : selectedProject ===
+                                                                        45
+                                                                      ? gunawardanaImages.map(
+                                                                          (
+                                                                            src,
+                                                                            index
+                                                                          ) => (
+                                                                            <img
+                                                                              key={
+                                                                                index
+                                                                              }
+                                                                              src={
+                                                                                src
+                                                                              }
+                                                                              alt={`Gunawardana Image ${index}`}
+                                                                              className="h-[300px] w-full object-cover"
+                                                                            />
+                                                                          )
+                                                                        )
+                                                                      : ""}
             </div>
-            <div className="grid grid-cols-1">
+            <div className="grid grid-cols-1 vintage-green">
               {selectedProject === 22 ? (
                 <img
                   src={kandy_school}
@@ -1035,19 +1136,13 @@ export default function Projects({projType}) {
               ) : selectedProject === 24 ? (
                 <img
                   src={katugastota}
-                  alt={`Ranawana Eco 2 Image`}
+                  alt={`Katugastota Image`}
                   className="object-cover w-full"
                 />
               ) : selectedProject === 25 ? (
                 <img
                   src={nugawela}
                   alt={`Nugawela Image`}
-                  className="object-cover w-full"
-                />
-              ) : selectedProject === 26 ? (
-                <img
-                  src={kurunegala}
-                  alt={`Kurunegala Image`}
                   className="object-cover w-full"
                 />
               ) : selectedProject === 27 ? (
@@ -1072,12 +1167,6 @@ export default function Projects({projType}) {
                 <img
                   src={digana}
                   alt={`Digana Image`}
-                  className="object-cover w-full"
-                />
-              ) : selectedProject === 31 ? (
-                <img
-                  src={balagolla}
-                  alt={`Balagolla Image`}
                   className="object-cover w-full"
                 />
               ) : selectedProject === 35 ? (
