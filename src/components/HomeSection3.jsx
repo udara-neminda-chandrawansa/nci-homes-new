@@ -1,4 +1,5 @@
 import CardType4 from "./CardType4";
+import { Link } from "wouter";
 import React, { useRef } from "react";
 
 // all projects
@@ -91,53 +92,55 @@ function HomeSection3() {
             Completed Projects
           </h1>
         </span>
-        <div
-          
-          className="grid grid-cols-5 gap-6 max-md:grid-cols-3 max-sm:grid-cols-1"
-          
-        >
-            {completedProjects.map((project, index) => (
-              <CardType4
-                key={index}
-                cardHeader={project[0]}
-                cardHeaderClasses={"text-lg"}
-                cardText1={project[2]}
-                cardText1Classes={
-                  "uppercase text-xs g-font-2 tracking-widest p-1"
-                }
-                cardImage={project[1]}
-                cardImageClasses={""}
-                btnText={"nobtn"}
-                extraClasses={""}
-              />
-            ))}
+        <div className="grid grid-cols-5 gap-6 max-md:grid-cols-3 max-sm:grid-cols-1">
+          {completedProjects.map((project, index) => (
+            <CardType4
+              key={index}
+              cardHeader={project[0]}
+              cardHeaderClasses={"text-lg"}
+              cardText1={project[2]}
+              cardText1Classes={
+                "uppercase text-xs g-font-2 tracking-widest p-1"
+              }
+              cardImage={project[1]}
+              cardImageClasses={""}
+              btnText={"nobtn"}
+              extraClasses={""}
+            />
+          ))}
         </div>
+        <span className="flex justify-center w-full py-3 border-y">
+          <Link href="/projects/2" className={"underline underline-offset-4"}>
+            View All
+          </Link>
+        </span>
         <span className="flex items-center justify-between py-3">
           <h1 className="text-5xl leading-snug uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
             Ongoing Projects
           </h1>
         </span>
-        <div
-          
-          className="grid grid-cols-5 gap-6 max-md:grid-cols-3 max-sm:grid-cols-1"
-          
-        >
-            {ongoingProjects.map((project, index) => (
-              <CardType4
-                key={index}
-                cardHeader={project[0]}
-                cardHeaderClasses={"text-lg"}
-                cardText1={project[2]}
-                cardText1Classes={
-                  "uppercase text-xs g-font-2 tracking-widest p-1"
-                }
-                cardImage={project[1]}
-                cardImageClasses={""}
-                btnText={"nobtn"}
-                extraClasses={""}
-              />
-            ))}
+        <div className="grid grid-cols-5 gap-6 max-md:grid-cols-3 max-sm:grid-cols-1">
+          {ongoingProjects.map((project, index) => (
+            <CardType4
+              key={index}
+              cardHeader={project[0]}
+              cardHeaderClasses={"text-lg"}
+              cardText1={project[2]}
+              cardText1Classes={
+                "uppercase text-xs g-font-2 tracking-widest p-1"
+              }
+              cardImage={project[1]}
+              cardImageClasses={""}
+              btnText={"nobtn"}
+              extraClasses={""}
+            />
+          ))}
         </div>
+        <span className="flex justify-center w-full py-3 border-y">
+          <Link href="/projects/3" className={"underline underline-offset-4"}>
+            View All
+          </Link>
+        </span>
       </div>
     </div>
   );
