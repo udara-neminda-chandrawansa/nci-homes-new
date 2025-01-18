@@ -59,7 +59,7 @@ function Footer() {
               <p className="max-sm:hidden">Follow Us On</p>
               <a
                 href="https://www.facebook.com/ncihomespvtltd/"
-                className="h-fit scale-150 max-sm:scale-125"
+                className="scale-150 h-fit max-sm:scale-125"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +74,7 @@ function Footer() {
               </a>
               <a
                 href="https://www.instagram.com/ncihomes/"
-                className="h-fit scale-150 max-sm:scale-125"
+                className="scale-150 h-fit max-sm:scale-125"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ function Footer() {
               </a>
               <a
                 href="https://www.linkedin.com/in/ncihomes/?originalSubdomain=lk"
-                className="h-fit scale-150 max-sm:scale-125"
+                className="scale-150 h-fit max-sm:scale-125"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -145,8 +145,8 @@ function Footer() {
           <div
             className={`flex max-[992px]:flex-col transition-all duration-300 overflow-hidden`}
           >
-            <ul className="flex flex-col w-full gap-4 pt-3 text-sm tracking-widest g-font-1 text-left">
-              <li className="flex gap-3 items-center">
+            <ul className="flex flex-col w-full gap-4 pt-3 text-sm tracking-widest text-left g-font-1">
+              <li className="flex items-center gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -160,9 +160,9 @@ function Footer() {
                 Address:
               </li>
               <li>NCI BUILDING</li>
-              <li className=" text-left">No. 381 A,Katugastota Road,Kandy</li>
+              <li className="text-left ">No. 381 A,Katugastota Road,Kandy</li>
               <li className="mt-3">Phone No:</li>
-              <li className="transition-all delay-75 hover:text-blue-300 flex gap-3 items-center">
+              <li className="flex items-center gap-3 transition-all delay-75 hover:text-blue-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -178,7 +178,7 @@ function Footer() {
                 </svg>
                 <a href="tel:812213613">+94 81 221 3613</a>
               </li>
-              <li className="transition-all delay-75 hover:text-blue-300 flex gap-3 items-center">
+              <li className="flex items-center gap-3 transition-all delay-75 hover:text-blue-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -195,7 +195,7 @@ function Footer() {
                 <a href="tel:777860950">+94 77 786 0950</a>
               </li>
               <li className="mt-3">Email:</li>
-              <li className="transition-all delay-75 hover:text-blue-300 flex gap-3 items-center">
+              <li className="flex items-center gap-3 transition-all delay-75 hover:text-blue-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -266,15 +266,15 @@ function Footer() {
         </div>
       </div>
       {/*row 4*/}
-      <div className="flex bg-blue-950 text-white h-fit">
+      <div className="flex text-white bg-blue-950 h-fit">
         <ul className="flex px-4 py-5 max-[992px]:px-0 justify-center gap-6 w-full uppercase g-font-1 tracking-widest text-xs max-md:flex-col max-md:px-4 max-md:pb-8 max-[992px]:w-full">
-          <li className="py-1 transition-all delay-75 w-fit md:pl-4">
+          <li className="py-1 text-center transition-all delay-75 md:w-fit md:pl-4">
             2025 © all rights reserved
           </li>
-          <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none delay-75 transition-all w-fit">
+          <li className="py-1 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none delay-75 transition-all md:w-fit text-center">
             NCI Homes (Pvt) Ltd
           </li>
-          <li className="py-1 md:pr-4 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none delay-75 transition-all w-fit">
+          <li className="py-1 md:pr-4 border-l-gray-300 border-l-[1px] pl-4 max-md:pl-0 max-md:border-none delay-75 transition-all md:w-fit text-center">
             designed & developed by Silicon Radon Networks (Pvt) Ltd
           </li>
         </ul>

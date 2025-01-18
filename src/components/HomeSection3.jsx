@@ -92,7 +92,7 @@ function HomeSection3() {
             Completed Projects
           </h1>
         </span>
-        <div className="grid grid-cols-5 gap-6 max-md:grid-cols-3 max-sm:grid-cols-1">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {completedProjects.map((project, index) => (
             <CardType4
               key={index}
@@ -119,12 +119,12 @@ function HomeSection3() {
             Ongoing Projects
           </h1>
         </span>
-        <div className="grid grid-cols-5 gap-6 max-md:grid-cols-3 max-sm:grid-cols-1">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {ongoingProjects.map((project, index) => (
             <CardType4
               key={index}
               cardHeader={project[0]}
-              cardHeaderClasses={"text-lg"}
+              cardHeaderClasses={"lg:text-lg"}
               cardText1={project[2]}
               cardText1Classes={
                 "uppercase text-xs g-font-2 tracking-widest p-1"

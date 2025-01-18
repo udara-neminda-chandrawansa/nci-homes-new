@@ -17,14 +17,14 @@ function CardType4({
     <div
       className={`flex flex-col items-center justify-between ${extraClasses}`}
     >
-      <span className={`w-full overflow-hidden h-3/5 group`}>
+      <span className={`w-full overflow-hidden h-4/5 group`}>
         <img
           className={`w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110 ${cardImageClasses}`}
           src={cardImage}
           alt={cardHeader}
         ></img>
       </span>
-      <h1 className={`uppercase text-center ${cardHeaderClasses}`}>
+      <h1 className={`uppercase text-center line-clamp-1 ${cardHeaderClasses}`}>
         {cardHeader}
       </h1>
       <span className="flex flex-col">
