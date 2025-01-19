@@ -92,7 +92,7 @@ function HomeSection3() {
             Completed Projects
           </h1>
         </span>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {completedProjects.map((project, index) => (
             <CardType4
               key={index}
@@ -119,7 +119,7 @@ function HomeSection3() {
             Ongoing Projects
           </h1>
         </span>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {ongoingProjects.map((project, index) => (
             <CardType4
               key={index}
