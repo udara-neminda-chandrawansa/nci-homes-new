@@ -97,10 +97,10 @@ function HomeSection3() {
             <CardType4
               key={index}
               cardHeader={project[0]}
-              cardHeaderClasses={"text-lg"}
+              cardHeaderClasses={"lg:text-lg"}
               cardText1={project[2]}
               cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest p-1"
+                "uppercase text-xs g-font-2 tracking-widest"
               }
               cardImage={project[1]}
               cardImageClasses={""}

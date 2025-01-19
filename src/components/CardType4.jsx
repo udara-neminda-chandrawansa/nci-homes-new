@@ -17,7 +17,7 @@ function CardType4({
     <div
       className={`flex flex-col items-center justify-between ${extraClasses}`}
     >
-      <span className={`w-full overflow-hidden h-4/5 group`}>
+      <span className={`w-full overflow-hidden h-full group`}>
         <img
           className={`w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110 ${cardImageClasses}`}
           src={cardImage}
@@ -28,10 +28,10 @@ function CardType4({
         {cardHeader}
       </h1>
       <span className="flex flex-col">
-        <p className={`text-center text-gray-300 ${cardText1Classes}`}>
+        <p className={`text-center text-white ${cardText1Classes}`}>
           {cardText1}
         </p>
-        <p className={`text-center text-gray-600 ${cardText2Classes}`}>
+        <p className={`text-center text-white ${cardText2Classes}`}>
           {cardText2}
         </p>
       </span>
