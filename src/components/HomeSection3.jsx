@@ -81,27 +81,25 @@ function HomeSection3() {
   ];
 
   return (
-    <div className="flex items-center justify-center px-3 py-3 text-white bg-gray-800">
+    <div className="flex items-center justify-center pb-3 text-white bg-gray-800">
       <div className="flex flex-col w-full gap-3">
-        <span className="flex items-center gap-5 text-xs tracking-widest text-gray-200 uppercase g-font-2">
+        <span className="items-center hidden gap-5 text-xs tracking-widest text-gray-200 uppercase g-font-2">
           Projects
           <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
         </span>
         <span className="flex items-center justify-between">
-          <h1 className="text-5xl leading-snug uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
+          <h1 className="w-full py-3 text-5xl leading-snug text-center text-gray-800 uppercase bg-white max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
             Completed Projects
           </h1>
         </span>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-3 px-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {completedProjects.map((project, index) => (
             <CardType4
               key={index}
               cardHeader={project[0]}
               cardHeaderClasses={"lg:text-lg"}
               cardText1={project[2]}
-              cardText1Classes={
-                "uppercase text-xs g-font-2 tracking-widest"
-              }
+              cardText1Classes={"uppercase text-xs g-font-2 tracking-widest"}
               cardImage={project[1]}
               cardImageClasses={""}
               btnText={"nobtn"}
@@ -114,12 +112,12 @@ function HomeSection3() {
             View All
           </Link>
         </span>
-        <span className="flex items-center justify-between py-3">
-          <h1 className="text-5xl leading-snug uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
+        <span className="flex items-center justify-between">
+          <h1 className="w-full py-3 text-5xl leading-snug text-center text-gray-800 uppercase bg-white max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
             Ongoing Projects
           </h1>
         </span>
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-3 px-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {ongoingProjects.map((project, index) => (
             <CardType4
               key={index}
