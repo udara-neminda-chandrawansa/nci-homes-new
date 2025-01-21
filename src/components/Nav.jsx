@@ -17,7 +17,20 @@ export default function Nav({
     <nav className={`flex justify-between px-6 py-1 z-10 w-full bg-${bgColor}`}>
       {/*left side*/}
       <span className="flex justify-between max-sm:w-full">
-        <span className="hidden max-lg:flex">
+        <label htmlFor="my-drawer" className="items-center justify-center hidden w-16 max-lg:flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            className="bi bi-list w-[16px] h-[16px] scale-150 text-black"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fillRule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </label>
+        <span className="hidden">
           <Button
             displayText={
               <svg
@@ -37,9 +50,9 @@ export default function Nav({
             onClick={handleOpening}
           />
         </span>
-        <h2 className="flex items-center sm:px-3 text-3xl">
+        <h2 className="flex items-center text-3xl sm:px-3">
           <Link href="/">
-            <img src={logo} alt="logo" className="h-12 object-contain"></img>
+            <img src={logo} alt="logo" className="object-contain h-12"></img>
           </Link>
         </h2>
         <ul
@@ -67,17 +80,17 @@ export default function Nav({
             </Link>
           </li>
           <li>
-          <Link href="/services">
-            <p className="p-1 underline-offset-[20px] hover:underline">
-              Services
-            </p>{" "}
+            <Link href="/services">
+              <p className="p-1 underline-offset-[20px] hover:underline">
+                Services
+              </p>{" "}
             </Link>
           </li>
           <li>
-          <Link href="/designs">
-            <p className="p-1 underline-offset-[20px] hover:underline">
-              Designs
-            </p>{" "}
+            <Link href="/designs">
+              <p className="p-1 underline-offset-[20px] hover:underline">
+                Designs
+              </p>{" "}
             </Link>
           </li>
         </ul>
@@ -148,11 +161,7 @@ export default function Nav({
             </a>
           </li>
         </ul>
-        <Button
-          displayText="Get In Touch"
-          url="/contact"
-          theme={theme}
-        />
+        <Button displayText="Get In Touch" url="/contact" theme={theme} />
       </span>
     </nav>
   );
