@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Carousel from "./Carousel";
 
 function CardType4({
   cardHeader,
@@ -18,11 +19,19 @@ function CardType4({
       className={`flex flex-col items-center justify-between ${extraClasses}`}
     >
       <span className={`w-full overflow-hidden h-full group`}>
-        <img
-          className={`w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110 ${cardImageClasses}`}
-          src={cardImage}
-          alt={cardHeader}
-        ></img>
+        {/*
+        
+          I HATE THAT FAG SAMPATH!
+
+        TODO:
+        rename the cardImage attribute of this component to something like neededProj and get that value from HomeSection3
+        to do that, completedProjects and ongoingProjects arrays in HomeSection3 need to be modified
+        Currently these arrays provide an image in the [1] position
+        change that to Project Name (camelCase them to match the array names in ProjectImageLoader) and that's it!
+        Now u can use the attribute (mentioned in step 1) to give to the Carousel below
+        
+        */}
+        <Carousel neededProjectName={"haraHouseImages"}/>
       </span>
       <h1 className={`uppercase text-center line-clamp-1 ${cardHeaderClasses}`}>
         {cardHeader}

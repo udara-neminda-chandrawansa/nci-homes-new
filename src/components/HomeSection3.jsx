@@ -1,6 +1,8 @@
 import CardType4 from "./CardType4";
 import { Link } from "wouter";
 import React, { useRef } from "react";
+import Carousel from "./Carousel";
+import ProjectImageLoader from "./ProjectImageLoader";
 
 // all projects
 import wells_park_kandy from "./../images/projects/completed/wells_park_kandy.jpg";
@@ -134,6 +136,7 @@ function HomeSection3() {
             />
           ))}
         </div>
+        
         <span className="flex justify-center w-full py-3 border-y">
           <Link href="/projects/3" className={"underline underline-offset-4"}>
             View All
