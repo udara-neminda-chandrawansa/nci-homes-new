@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import Button from "./Button";
 import Nav from "./Nav";
 
-import banner_1 from "./../images/landing/banner/banner_1.jpg";
-import banner_2 from "./../images/landing/banner/banner_2.jpg";
-import banner_3 from "./../images/landing/banner/banner_6.jpg";
+import banner_1 from "./../images/landing/banner/new_banner_1.jpg";
+import banner_2 from "./../images/landing/banner/new_banner_2.jpg";
+import banner_3 from "./../images/landing/banner/new_banner_3.jpg";
 
 export default function Banner() {
   //
@@ -83,7 +83,7 @@ export default function Banner() {
 
   return (
     <div
-      className={`w-full flex flex-col justify-between p-1 h-[100dvh] bg-cover text-white`}
+      className={`w-full flex flex-col justify-between p-1 h-[100dvh] bg-cover text-white bg-center`}
       style={{ backgroundImage: `url(${items[2]})` }}
     >
       <Nav theme={"dark"} bgColor={"white"} textColor={"black"}></Nav>

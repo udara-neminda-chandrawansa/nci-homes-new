@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import Button from "./Button";
-import bg from "./../images/landing/banner/banner_6.jpg";
+import bg from "./../images/landing/banner/banner_1.jpg";
 
 export default function Sidebar() {
   const handleClosing = () => {
