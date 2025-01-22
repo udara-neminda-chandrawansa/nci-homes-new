@@ -445,6 +445,18 @@ export default function ProjectImageLoader({ neededProjectName }) {
   }, []);
 
   switch (neededProjectName) {
+    case "haraHouseImages":
+      return haraHouseImages;
+    case "nuwEliyaHouseImages":
+      return nuwEliyaHouseImages;
+    case "kandyHouseImages":
+      return kandyHouseImages;
+    case "abathennaHouseImages":
+      return abathennaHouseImages;
+    case "wattaranthennaHousingImages":
+      return wattaranthennaHousingImages;
+    case "nugawelaHousingImages":
+      return nugawelaHousingImages;
     case "wellsParkImages":
       return wellsParkImages;
     case "ranawanaHousingImages":
