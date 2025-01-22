@@ -23,7 +23,7 @@ const Carousel = ({ neededProjectName }) => {
   return (
     <div className="relative w-full h-full max-w-4xl mx-auto">
       {/* Image container */}
-      <div className="relative overflow-hidden h-36">
+      <div className="relative overflow-hidden h-36 max-lg:h-64">
         {images.map((image, index) => (
           <div
             key={`${image}-${index}`}
@@ -45,20 +45,26 @@ const Carousel = ({ neededProjectName }) => {
       </div>
 
       {/* Navigation buttons */}
-      <button
-        onClick={prevSlide}
-        className="absolute p-2 transition-colors -translate-y-1/2 rounded-full shadow-lg left-2 top-1/2 bg-white/80 hover:bg-white"
-        aria-label="Previous slide"
-      >
-        <ChevronLeft className="w-6 h-6" />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute p-2 transition-colors -translate-y-1/2 rounded-full shadow-lg right-2 top-1/2 bg-white/80 hover:bg-white"
-        aria-label="Next slide"
-      >
-        <ChevronRight className="w-6 h-6" />
-      </button>
+      {images.length > 1 ? (
+        <>
+          <button
+            onClick={prevSlide}
+            className="absolute p-2 transition-colors -translate-y-1/2 rounded-full shadow-lg left-2 top-1/2 bg-white/50 hover:bg-white/60"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute p-2 transition-colors -translate-y-1/2 rounded-full shadow-lg right-2 top-1/2 bg-white/50 hover:bg-white/60"
+            aria-label="Next slide"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

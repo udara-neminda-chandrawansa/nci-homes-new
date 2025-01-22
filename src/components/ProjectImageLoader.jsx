@@ -88,6 +88,19 @@ const gunawardana_grid = import.meta.glob(
   "../images/projects/ongoing/gunawardana/*.{png,jpg,jpeg,svg}"
 ); //
 
+// single images
+import katugastota from "./../images/projects/ongoing/katugastota.jpg";
+import kandy_school from "../images/projects/ongoing/kandy-school.jpg";
+import ranawana_eco_2 from "../images/projects/ongoing/ranawana-eco-2.jpg";
+import nugawela from "../images/projects/ongoing/nugawela.jpg";
+import international_school from "../images/projects/ongoing/international-school.jpg";
+import mahaiyawa from "../images/projects/ongoing/mahaiyawa.jpg";
+import rajapihilla_hotel from "../images/projects/ongoing/rajapihilla-hotel.jpg";
+import ranawana_3 from "../images/projects/ongoing/ranawana-3.jpg";
+import padiyapelella from "../images/projects/ongoing/padiyapelella.jpg";
+import pallekele from "../images/projects/ongoing/pallekele.jpg";
+import mapanawathura from "../images/projects/ongoing/mapanawathura.jpg";
+
 export default function ProjectImageLoader({ neededProjectName }) {
   // completed proj gallery array (for modal)
   const [haraHouseImages, setHaraHouseImages] = useState([]);
@@ -462,6 +475,42 @@ export default function ProjectImageLoader({ neededProjectName }) {
       return hantana1HousingImages;
     case "kundasaleHousingImages":
       return kundasaleHousingImages;
+    case "katugastotaHotelImages":
+      return katugastotaHotelImages;
+    case "polgollaImages":
+      return polgollaImages;
+    case "aniwatteImages":
+      return aniwatteImages;
+    case "gohagodaImages":
+      return gohagodaImages;
+    case "kurunegalaImages":
+      return kurunegalaImages;
+    case "balagollaImages":
+      return balagollaImages;
+    case "gunawardanaImages":
+      return gunawardanaImages;
+    case "kandy_school":
+      return [kandy_school];
+    case "ranawana_eco_2":
+      return [ranawana_eco_2];
+    case "nugawela":
+      return [nugawela];
+    case "international_school":
+      return [international_school];
+    case "mahaiyawa":
+      return [mahaiyawa];
+    case "rajapihilla_hotel":
+      return [rajapihilla_hotel];
+    case "ranawana_3":
+      return [ranawana_3];
+    case "padiyapelella":
+      return [padiyapelella];
+    case "pallekele":
+      return [pallekele];
+    case "mapanawathura":
+      return [mapanawathura];
+    case "katugastota":
+      return [katugastota];
     default:
       break;
   }

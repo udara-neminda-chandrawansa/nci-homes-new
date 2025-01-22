@@ -5,35 +5,8 @@ import Carousel from "./Carousel";
 import ProjectImageLoader from "./ProjectImageLoader";
 
 // all projects
-import wells_park_kandy from "./../images/projects/completed/wells_park_kandy.jpg";
-import ranawana_housing from "./../images/projects/completed/ranawana_housing.jpg";
-import hantana_2_housing from "./../images/projects/completed/hantana_2_housing.jpg";
-import katugastota_2_housing from "./../images/projects/completed/katugastota_2_housing.jpg";
-import kengalla_housing from "./../images/projects/completed/kengalla_housing.jpg";
-import hantana_1_housing from "./../images/projects/completed/hantana_1_housing.jpg";
-import ranawana_eco_housing from "./../images/projects/completed/ranawana_eco_housing.jpg";
-import heerasgala_housing from "./../images/projects/completed/heerasgala_housing.jpg";
-import nittabuwa_three_story from "./../images/projects/completed/nittabuwa_three_story.jpg";
-import iriyagama_housing from "./../images/projects/completed/iriyagama_housing.jpg";
-import dodamwala_three_story from "./../images/projects/completed/dodamwala_three_story.jpg";
-import mahaiyawa_2_story from "./../images/projects/completed/mahaiyawa_2_story.jpg";
-import lewella_2_story from "./../images/projects/completed/lewella_2_story.jpg";
-import aniwatta_2_story from "./../images/projects/completed/aniwatta_2_story.jpg";
-import kundasale_housing from "./../images/projects/completed/kundasale_housing.jpg";
-import katugastota_hotel from "./../images/projects/ongoing/katugastota_hotel.jpg";
-import kandy_school from "./../images/projects/ongoing/kandy-school.jpg";
-import ranawana_eco_2 from "./../images/projects/ongoing/ranawana-eco-2.jpg";
-import katugastota from "./../images/projects/ongoing/katugastota.jpg";
-import nugawela from "./../images/projects/ongoing/nugawela.jpg";
 import kurunegala from "./../images/projects/ongoing/kurunegala.jpg";
-import international_school from "./../images/projects/ongoing/international-school.jpg";
 import balagolla_industrial_zone from "./../images/projects/ongoing/balagolla-industrial-zone.jpg";
-import mahaiyawa from "./../images/projects/ongoing/mahaiyawa.jpg";
-import rajapihilla_hotel from "./../images/projects/ongoing/rajapihilla-hotel.jpg";
-import ranawana_3 from "./../images/projects/ongoing/ranawana-3.jpg";
-import padiyapelella from "./../images/projects/ongoing/padiyapelella.jpg";
-import pallekele from "./../images/projects/ongoing/pallekele.jpg";
-import mapanawathura from "./../images/projects/ongoing/mapanawathura.jpg";
 import gunawardana from "./../images/projects/ongoing/gunawardana.jpg";
 
 function HomeSection3() {
@@ -62,24 +35,24 @@ function HomeSection3() {
   // ongoing projects array (for cards)
   const ongoingProjects = [
     ["A Hotel", "katugastotaHotelImages", "Katugastota"],
-    ["A School Project", kandy_school, "Kandy"],
-    ["Eco Housing Project #2", ranawana_eco_2, "Ranawana"],
-    ["Housing Project", katugastota, "Katugastota"],
-    ["Construction Project", nugawela, "Nugawela"],
-    ["Construction Project", kurunegala, "Kurunegala"],
-    ["International School Project", international_school, "-"],
+    ["A School Project", "kandy_school", "Kandy"],
+    ["Eco Housing Project #2", "ranawana_eco_2", "Ranawana"],
+    ["Housing Project", "katugastota", "Katugastota"],
+    ["Construction Project", "nugawela", "Nugawela"],
+    ["Construction Project", "kurunegalaImages", "Kurunegala"],
+    ["International School Project", "international_school", "-"],
     [
       "Industrial Zone Building Project",
-      balagolla_industrial_zone,
+      "balagollaImages",
       "Balagolla",
     ],
-    ["Housing Project", mahaiyawa, "Mahaiyawa"],
-    ["Hotel Construction Project", rajapihilla_hotel, "Rajapihilla Mawatha"],
-    ["Housing Project #3", ranawana_3, "Ranawana"],
-    ["Commercial Building Project", padiyapelella, "Padiyapelella"],
-    ["Commercial Building Project", pallekele, "Pallekele"],
-    ["Housing Project", mapanawathura, "Mapanawathura"],
-    ["Mr. Gunawardana's Project", gunawardana, "-"],
+    ["Housing Project", "mahaiyawa", "Mahaiyawa"],
+    ["Hotel Construction Project", "rajapihilla_hotel", "Rajapihilla Mawatha"],
+    ["Housing Project #3", "ranawana_3", "Ranawana"],
+    ["Commercial Building Project", "padiyapelella", "Padiyapelella"],
+    ["Commercial Building Project", "pallekele", "Pallekele"],
+    ["Housing Project", "mapanawathura", "Mapanawathura"],
+    ["Mr. Gunawardana's Project", "gunawardanaImages", "-"],
   ];
 
   return (
@@ -119,7 +92,7 @@ function HomeSection3() {
           </h1>
         </span>
         <div className="grid grid-cols-1 gap-3 p-3 py-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {/*
+          
           {ongoingProjects.map((project, index) => (
             <CardType4
               key={index}
@@ -133,7 +106,7 @@ function HomeSection3() {
               btnText={"nobtn"}
             />
           ))}
-            */}
+            
         </div>
         
         <span className="flex justify-center w-full py-3 border-y">
