@@ -8,7 +8,7 @@ function CardType4({
   cardText1Classes,
   cardText2,
   cardText2Classes,
-  cardImage,
+  cardProject,
   cardImageClasses,
   btnText,
   url,
@@ -31,7 +31,7 @@ function CardType4({
         Now u can use the attribute (mentioned in step 1) to give to the Carousel below
         
         */}
-        <Carousel neededProjectName={"haraHouseImages"}/>
+        <Carousel neededProjectName={cardProject}/>
       </span>
       <h1 className={`uppercase text-center line-clamp-1 ${cardHeaderClasses}`}>
         {cardHeader}

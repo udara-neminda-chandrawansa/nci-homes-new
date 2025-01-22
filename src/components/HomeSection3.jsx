@@ -42,26 +42,26 @@ function HomeSection3() {
 
   // completed projects array (for cards)
   const completedProjects = [
-    ["Kandy", wells_park_kandy, "Wells Park Site"],
-    ["Housing Project", ranawana_housing, "Ranawana"],
-    ["Eco-Friendly House", ranawana_eco_housing, "Ranawana"],
-    ["Housing Project", heerasgala_housing, "Heerassagala"],
-    ["Three Story House", nittabuwa_three_story, "Nittabuwa"],
-    ["Housing Project", iriyagama_housing, "Iriyagama"],
-    ["Three Story House", dodamwala_three_story, "Dodamwala"],
-    ["Housing Project", hantana_2_housing, "Hantana (Site 2)"],
-    ["Two Story House", mahaiyawa_2_story, "Mahaiyawa"],
-    ["Housing Project", kengalla_housing, "Kengalla"],
-    ["Two Story House", lewella_2_story, "Lewella"],
-    ["Housing Project", katugastota_2_housing, "Katugastota (Site 2)"],
-    ["Two Story House", aniwatta_2_story, "Aniwatta"],
-    ["Housing Project", hantana_1_housing, "Hantana (Site 1)"],
-    ["Housing Project", kundasale_housing, "Kundasale"],
+    ["Kandy", "wellsParkImages", "Wells Park Site"],
+    ["Housing Project", "ranawanaHousingImages", "Ranawana"],
+    ["Eco-Friendly House", "ranawanaEcoImages", "Ranawana"],
+    ["Housing Project", "heerasgalaHousingImages", "Heerassagala"],
+    ["Three Story House", "nittabuwa3StoryHousingImages", "Nittabuwa"],
+    ["Housing Project", "iriyagamaHousingImages", "Iriyagama"],
+    ["Three Story House", "dodamwala3StoryHousingImages", "Dodamwala"],
+    ["Housing Project", "hantana2HousingImages", "Hantana (Site 2)"],
+    ["Two Story House", "mahaiyawa2StoryHousingImages", "Mahaiyawa"],
+    ["Housing Project", "kengallaHousingImages", "Kengalla"],
+    ["Two Story House", "lewella2StoryHousingImages", "Lewella"],
+    ["Housing Project", "katugastota2HousingImages", "Katugastota (Site 2)"],
+    ["Two Story House", "aniwatta2StoryHousingImages", "Aniwatta"],
+    ["Housing Project", "hantana1HousingImages", "Hantana (Site 1)"],
+    ["Housing Project", "kundasaleHousingImages", "Kundasale"],
   ];
 
   // ongoing projects array (for cards)
   const ongoingProjects = [
-    ["A Hotel", katugastota_hotel, "Katugastota"],
+    ["A Hotel", "katugastotaHotelImages", "Katugastota"],
     ["A School Project", kandy_school, "Kandy"],
     ["Eco Housing Project #2", ranawana_eco_2, "Ranawana"],
     ["Housing Project", katugastota, "Katugastota"],
@@ -102,8 +102,7 @@ function HomeSection3() {
               cardHeaderClasses={"lg:text-lg"}
               cardText1={project[2]}
               cardText1Classes={"uppercase text-xs g-font-2 tracking-widest"}
-              cardImage={project[1]}
-              cardImageClasses={""}
+              cardProject={project[1]}
               btnText={"nobtn"}
               extraClasses={""}
             />
@@ -120,6 +119,7 @@ function HomeSection3() {
           </h1>
         </span>
         <div className="grid grid-cols-1 gap-3 p-3 py-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          {/*
           {ongoingProjects.map((project, index) => (
             <CardType4
               key={index}
@@ -129,12 +129,11 @@ function HomeSection3() {
               cardText1Classes={
                 "uppercase text-xs g-font-2 tracking-widest p-1"
               }
-              cardImage={project[1]}
-              cardImageClasses={""}
+              cardProject={project[1]}
               btnText={"nobtn"}
-              extraClasses={""}
             />
           ))}
+            */}
         </div>
         
         <span className="flex justify-center w-full py-3 border-y">

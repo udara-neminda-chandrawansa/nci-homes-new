@@ -88,8 +88,7 @@ const gunawardana_grid = import.meta.glob(
   "../images/projects/ongoing/gunawardana/*.{png,jpg,jpeg,svg}"
 ); //
 
-export default function ProjectImageLoader({neededProjectName}) {
-
+export default function ProjectImageLoader({ neededProjectName }) {
   // completed proj gallery array (for modal)
   const [haraHouseImages, setHaraHouseImages] = useState([]);
   const [nuwEliyaHouseImages, setNuwEliyaHouseImages] = useState([]);
@@ -431,11 +430,39 @@ export default function ProjectImageLoader({neededProjectName}) {
 
     loadGunawardanaImages(); //
   }, []);
-  
+
   switch (neededProjectName) {
-    case "haraHouseImages":
-        return haraHouseImages;  
+    case "wellsParkImages":
+      return wellsParkImages;
+    case "ranawanaHousingImages":
+      return ranawanaHousingImages;
+    case "ranawanaEcoImages":
+      return ranawanaEcoImages;
+    case "heerasgalaHousingImages":
+      return heerasgalaHousingImages;
+    case "nittabuwa3StoryHousingImages":
+      return nittabuwa3StoryHousingImages;
+    case "iriyagamaHousingImages":
+      return iriyagamaHousingImages;
+    case "dodamwala3StoryHousingImages":
+      return dodamwala3StoryHousingImages;
+    case "hantana2HousingImages":
+      return hantana2HousingImages;
+    case "mahaiyawa2StoryHousingImages":
+      return mahaiyawa2StoryHousingImages;
+    case "kengallaHousingImages":
+      return kengallaHousingImages;
+    case "lewella2StoryHousingImages":
+      return lewella2StoryHousingImages;
+    case "katugastota2HousingImages":
+      return katugastota2HousingImages;
+    case "aniwatta2StoryHousingImages":
+      return aniwatta2StoryHousingImages;
+    case "hantana1HousingImages":
+      return hantana1HousingImages;
+    case "kundasaleHousingImages":
+      return kundasaleHousingImages;
     default:
-        break;
+      break;
   }
 }
