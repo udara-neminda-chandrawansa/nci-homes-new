@@ -20,8 +20,6 @@ function CardType4({
     >
       <span className={`w-full overflow-hidden h-full group`}>
         {/*
-        
-          I HATE THAT FAG SAMPATH!
 
         TODO:
         rename the cardImage attribute of this component to something like neededProj and get that value from HomeSection3
