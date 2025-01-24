@@ -150,14 +150,14 @@ export default function About() {
         </h1>
         {/*card container*/}
         <div className="w-full h-fit flex items-center p-4 gap-3 max-[992px]:flex-col">
-          <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] max-md:h-fit w-1/3 max-[992px]:w-full">
+          <div className="bg-gray-50 flex flex-col justify-between gap-6 p-8 h-[400px] max-md:h-fit w-1/3 max-[992px]:w-full">
             <h1 className="text-2xl uppercase max-xl:text-xl max-lg:text-lg">
               NCI Homes PROPERTIES free services
             </h1>
-            <p className="text-xl g-font-1 max-xl:text-lg">
+            <p className="xl:text-lg 2xl:text-xl g-font-1">
               If your construction project is handed over to us, we would do the
               following services for you free of charge. Building Plan, Bill of
-              Quantities, Plan Approval, Arranging a Loan Facility
+              Quantities.
             </p>
             <Button
               displayText={"Learn More"}
@@ -167,11 +167,11 @@ export default function About() {
               theme={"dark"}
             ></Button>
           </div>
-          <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] max-md:h-fit w-1/3 max-[992px]:w-full">
+          <div className="bg-gray-50 flex flex-col justify-between gap-6 p-8 h-[400px] max-md:h-fit w-1/3 max-[992px]:w-full">
             <h1 className="text-2xl uppercase max-xl:text-xl max-lg:text-lg">
               design portfolio of NCI Homes
             </h1>
-            <p className="text-xl g-font-1 max-xl:text-lg">
+            <p className="xl:text-lg 2xl:text-xl g-font-1">
               Explore our wide range of projects, including single-story homes,
               two-story and three-story residences, and commercial buildings.
               Each structure is thoughtfully designed to blend functionality,
@@ -185,11 +185,11 @@ export default function About() {
               theme={"dark"}
             ></Button>
           </div>
-          <div className="bg-gray-50 flex flex-col justify-center gap-6 p-8 h-[400px] max-md:h-fit w-1/3 max-[992px]:w-full">
+          <div className="bg-gray-50 flex flex-col justify-between gap-6 p-8 h-[400px] max-md:h-fit w-1/3 max-[992px]:w-full">
             <h1 className="text-2xl uppercase max-xl:text-xl max-lg:text-lg">
               our Experience
             </h1>
-            <p className="text-xl g-font-1 max-xl:text-lg">
+            <p className="xl:text-lg 2xl:text-xl g-font-1">
               We have over 22 years of experience in building and home
               constructions, planning, designing, landscaping and all kinds of
               civil engineering services. We treat our customers with the best

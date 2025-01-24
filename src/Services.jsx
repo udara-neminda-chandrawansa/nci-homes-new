@@ -35,23 +35,17 @@ function Services() {
             <div className="lg:w-2/3 max-lg:px-4">
               <ul className="flex flex-col justify-center gap-4 list-disc">
                 <li>
-                  2D and 3D Elevations and House plans are drawn under
-                  supervision by charted Civil Engineers.
+                  Architectures
                 </li>
-                <li>Floor area counting.</li>
-                <li>Provides special loan facilities.</li>
-                <li>Planning approvals.</li>
-                <li>Making bill of quantities for bank loans.</li>
-                <li>Constructions are done in any area of the country.</li>
+                <li>Civil Engineers</li>
+                <li>Quantity Surveyors</li>
+                <li>Land Surveyors</li>
+                <li>Draftsmen</li>
+                <li>Landscaping</li>
                 <li>
-                  Personalized home building on your land or on any land
-                  selected by you.
+                  Contractor
                 </li>
-                <li>Landscaping with new and old designs</li>
-                <li>
-                  Turn-key construction services (ready-to-use houses) for both
-                  Sri Lankan and Foreigners.
-                </li>
+                <li>Interior Design</li>
               </ul>
             </div>
           </div>
@@ -66,8 +60,8 @@ function Services() {
               <ul className="flex flex-col justify-center gap-4 list-disc">
                 <li>Building Plan</li>
                 <li>Bill of Quantities</li>
-                <li>Plan Approval</li>
-                <li>Arrange a Loan Facility</li>
+                <li className="hidden">Plan Approval</li>
+                <li className="hidden">Arrange a Loan Facility</li>
               </ul>
             </div>
             <div className="flex items-end max-lg:justify-center lg:w-1/3">

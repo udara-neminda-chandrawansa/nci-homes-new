@@ -17,7 +17,7 @@ function HomeSection3() {
   const completedProjects = [
     ["Kandy", "wellsParkImages", "Wells Park Site"],
     ["Housing Project", "ranawanaHousingImages", "Ranawana"],
-    ["Eco-Friendly House", "ranawanaEcoImages", "Ranawana"],
+    ["Eco-Friendly Hotel", "ranawanaEcoImages", "Ranawana"],
     ["Housing Project", "heerasgalaHousingImages", "Heerassagala"],
     ["Three Story House", "nittabuwa3StoryHousingImages", "Nittabuwa"],
     ["Housing Project", "iriyagamaHousingImages", "Iriyagama"],
@@ -27,7 +27,7 @@ function HomeSection3() {
     ["Housing Project", "kengallaHousingImages", "Kengalla"],
     ["Two Story House", "lewella2StoryHousingImages", "Lewella"],
     ["Housing Project", "katugastota2HousingImages", "Katugastota (Site 2)"],
-    ["Two Story House", "aniwatta2StoryHousingImages", "Aniwatta"],
+    ["Kandy City Housing Project", "kandyHouseImages", "Kandy"],
     ["Housing Project", "hantana1HousingImages", "Hantana (Site 1)"],
     ["Housing Project", "kundasaleHousingImages", "Kundasale"],
   ];

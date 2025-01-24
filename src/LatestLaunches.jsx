@@ -147,7 +147,7 @@ export default function Projects({ projType }) {
       "Project Description",
     ],
     [
-      "Ranawana Eco-Friendly House",
+      "Ranawana Eco-Friendly Hotel",
       ranawana_eco_housing,
       "Project Description",
     ],
