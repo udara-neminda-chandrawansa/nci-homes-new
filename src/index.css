@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "futura"; /* futura */
+  src: url("./fonts/futura-light-bt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "optima-reg"; /* optima regular */
   src: url("./fonts/Optima-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -57,6 +64,10 @@ code {
 
 .line-height-lg{
   line-height: 25px;
+}
+
+.futura {
+  font-family: "futura", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .optima-reg {
