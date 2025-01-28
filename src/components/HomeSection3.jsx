@@ -24,7 +24,7 @@ function HomeSection3() {
     ["Three Story House", "dodamwala3StoryHousingImages", "Dodamwala"],
     ["Housing Project", "hantana2HousingImages", "Hantana (Site 2)"],
     ["Two Story House", "mahaiyawa2StoryHousingImages", "Mahaiyawa"],
-    ["Housing Project", "ranawanaHousingImages", "Ranawana"],
+    ["Housing Project", "haraHouseImages", "Haragama"],
     ["Housing Project", "kengallaHousingImages", "Kengalla"],
     ["Two Story House", "lewella2StoryHousingImages", "Lewella"],
     ["Housing Project", "katugastota2HousingImages", "Katugastota (Site 2)"],

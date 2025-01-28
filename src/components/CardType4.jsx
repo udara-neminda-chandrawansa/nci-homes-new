@@ -16,7 +16,7 @@ function CardType4({
 }) {
   return (
     <div
-      className={`flex flex-col items-center justify-between ${extraClasses}`}
+      className={`flex flex-col mt-1 items-center justify-between ${extraClasses}`}
     >
       <span className={`w-full overflow-hidden h-full group`}>
         {/*
