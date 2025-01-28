@@ -209,7 +209,7 @@ export default function About() {
       {/*int. destinations*/}
       <div className="flex max-[992px]:flex-col lg:h-fit">
         {/*Title*/}
-        <div className="flex flex-col items-start gap-5 w-1/3 px-3 py-12 max-[992px]:w-full lg:h-fit">
+        <div className="flex flex-col items-start gap-5 w-1/3 px-3 py-3 max-[992px]:w-full lg:h-fit">
           <span className="flex items-center gap-5 text-xs tracking-widest text-gray-600 uppercase g-font-2">
             Our guarantee
             <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
@@ -247,14 +247,14 @@ export default function About() {
               displayText="View Our Projects"
               url={"/projects"}
               theme="dark"
-              width={"[80%]"}
+              width={"[100%]"}
               extraClasses={"w-[100%]"}
             />
           </span>
         </div>
-        <div className="flex w-2/3 max-[992px]:w-full max-md:flex-col lg:h-fit">
+        <div className="flex w-2/3 max-[992px]:w-full max-md:flex-col">
           {/*Card Stock 1*/}
-          <div className="flex flex-col justify-start w-1/2 px-3 max-md:w-full">
+          <div className="flex flex-col justify-center w-1/2 px-1 max-md:w-full">
             <CardType2
               cardUrl={"https://www.google.com"}
               cardText1={""}
@@ -278,7 +278,7 @@ export default function About() {
             />
           </div>
           {/*Card Stock 2*/}
-          <div className="flex flex-col justify-start w-1/2 px-3 max-md:w-full">
+          <div className="flex flex-col justify-center w-1/2 px-1 max-md:w-full">
             <CardType2
               cardUrl={"https://www.google.com"}
               cardText1={""}

@@ -26,13 +26,13 @@ function CardType2({
 
   return (
     <div
-      className={`flex flex-col items-center justify-between ${extraClasses}`}
+      className={`flex flex-col h-fit items-center justify-between ${extraClasses}`}
     >
       <span className="overflow-hidden w-full group">
         <img
           src={isMdScreen ? cardImageMd : cardImage}
           alt={cardText1}
-          className="w-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110"
+          className="w-full h-[200px] object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110"
         />
       </span>
       <span className="flex w-full py-3 gap-3 g-font-2 uppercase text-xs tracking-widest">
