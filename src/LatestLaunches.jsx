@@ -382,13 +382,13 @@ export default function Projects({ projType }) {
         {/*image modal*/}
         <dialog id="my_modal_3" className="modal">
           <div className="w-11/12 max-w-5xl modal-box">
-            <form method="dialog">
+            <form className="fixed" method="dialog">
               {/* if there is a button in form, it will close the modal */}
-              <button className="absolute btn btn-sm btn-circle btn-ghost right-2 top-2">
+              <button className="fixed btn btn-sm btn-circle btn-ghost right-2 top-2">
                 ✕
               </button>
             </form>
-            <div className="grid grid-cols-3 gap-6 pt-6 max-md:grid-cols-2 max-sm:grid-cols-1 vintage-green">
+            <div className="grid grid-cols-3 gap-1 pt-6 max-md:grid-cols-2 max-sm:grid-cols-1 vintage-green">
               {selectedProject === 0
                 ? haraHouseImages.map((image, index) => (
                     <img
