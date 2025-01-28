@@ -83,7 +83,7 @@ export default function Sidebar() {
             className="drawer-overlay"
           ></label>
           <ul
-            className="min-h-full bg-left bg-cover menu bg-base-200 text-base-content w-80"
+            className="min-h-full bg-left bg-cover menu bg-base-200 text-base-content w-80 max-md:w-[100dvw]"
             style={{ backgroundImage: `url(${bg})` }}
           >
             {/* Sidebar content here */}
@@ -104,7 +104,7 @@ export default function Sidebar() {
                 </svg>
               </label>
             </span>
-            <ul className="w-[300px] flex flex-col gap-3 flex-grow text-white font-black">
+            <ul className="w-[300px] max-md:w-full flex flex-col gap-3 flex-grow text-white font-black max-md:justify-center max-md:gap-6">
               <li>
                 <Link href="/" className="flex justify-center p-1 text-xl">
                   Home

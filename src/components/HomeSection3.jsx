@@ -50,7 +50,7 @@ function HomeSection3() {
     ],
     ["Housing Project", "mahaiyawa", "Mahaiyawa"],
     ["Hotel Construction Project", "rajapihilla_hotel", "Rajapihilla Mawatha"],
-    ["Housing Project #3", "ranawana_3", "Ranawana"],
+    ["Housing Project", "ranawana_3", "Nugawela"],
     ["Housing Project", "polgollaImages", "Polgolla"],
     ["Commercial Building Project", "padiyapelella", "Padiyapelella"],
     ["Commercial Building Project", "pallekele", "Pallekele"],
