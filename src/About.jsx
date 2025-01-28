@@ -86,8 +86,8 @@ export default function About() {
               alt="about"
             ></img>
             {/*floating white square with text*/}
-            <div className="absolute bottom-[-15%] w-full h-fit max-[992px]:relative max-[992px]:z-10 max-[992px]:bottom-0">
-              <div className="bg-white w-2/3 max-[992px]:w-full p-4 py-12 h-fit flex flex-col justify-center">
+            <div className="absolute bottom-0 w-full h-fit max-[992px]:relative max-[992px]:z-10 max-[992px]:bottom-0">
+              <div className="bg-white w-2/3 max-[992px]:w-full p-4 py-3 h-fit flex flex-col justify-center">
                 <span className="flex items-center gap-5 p-1 text-xs tracking-widest text-gray-600 uppercase g-font-2">
                   Overview
                   <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
@@ -95,7 +95,7 @@ export default function About() {
                 <h1 className="text-5xl uppercase max-xl:text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl">
                   About NCI Homes pvt ltd
                 </h1>
-                <p className="py-4 text-lg g-font-1 max-sm:text-sm">
+                <p className="py-2 text-lg g-font-1 max-sm:text-sm">
                   Established in 2001, NCI Homes (Pvt) Ltd has became one of the
                   leading construction company in Sri Lanka. Our main office and
                   branches are located in Kandy, the central province of Sri
@@ -117,7 +117,7 @@ export default function About() {
         </div>
       </div>
       {/*owners message*/}
-      <div className="relative p-4 mt-[10%] max-[992px]:flex flex-col justify-center items-center max-[992px]:mt-0">
+      <div className="relative px-4 pt-4 max-[992px]:flex flex-col justify-center items-center max-[992px]:mt-0">
         <img
           className="w-full h-[600px] object-cover"
           src={banner_2}
@@ -126,7 +126,7 @@ export default function About() {
         {/*floating white square with text*/}
         <div className="absolute bottom-0 h-fit max-[992px]:static">
           <div className="bg-white w-2/5 max-[992px]:w-full p-8 py-12 h-fit flex flex-col justify-center gap-3">
-            <h1 className="text-2xl font-medium uppercase">
+            <h1 className="text-2xl font-medium uppercase text-justify">
               We offer you the most competitive rates of the current market.
               Brand new houses are available from 3.5 million onwards.
             </h1>
@@ -137,7 +137,7 @@ export default function About() {
             <Button
               displayText="Contact Us"
               theme="dark"
-              width={"fit"}
+              width={"full"}
               url={"/contact"}
             ></Button>
           </div>
