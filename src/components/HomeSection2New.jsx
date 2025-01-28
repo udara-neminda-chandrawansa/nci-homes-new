@@ -9,8 +9,8 @@ function HomeSection2New() {
         Our Uniqueness
         <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
       </span>
-      <div className="flex gap-6 p-3 max-md:flex-col">
-        <div className="md:w-1/3">
+      <div className="flex justify-center gap-6 p-3 max-md:flex-col">
+        <div className="md:w-[25%]">
           <img
             src={choose_us_img}
             alt="choose_us_img"

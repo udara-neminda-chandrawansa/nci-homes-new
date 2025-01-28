@@ -46,7 +46,7 @@ function Footer() {
   };
 
   return (
-    <div className="flex flex-col gap-10 px-4 pt-12 mt-6 h-fit bg-gray-50 max-md:gap-6 max-sm:gap-3">
+    <div className="flex flex-col gap-5 px-4 pt-2 mt-6 h-fit bg-gray-50 max-md:gap-6 max-sm:gap-3">
       {/*logo & shit (hidden)*/}
       <div className="hidden max-[992px]:flex-col">
         {/*logo + social*/}
