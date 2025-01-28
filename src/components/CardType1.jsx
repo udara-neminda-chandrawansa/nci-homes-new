@@ -19,7 +19,7 @@ function CardType1({
     >
       <span className={`w-full overflow-hidden h-fit group`}>
         <img
-          className={`w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110 ${cardImageClasses}`}
+          className={`w-full hidden h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110 ${cardImageClasses}`}
           src={cardImage}
           alt={cardHeader}
         ></img>
@@ -39,7 +39,8 @@ function CardType1({
         <Button
           displayText={btnText}
           theme={"dark"}
-          extraClasses={"w-[200px]"}
+          width={"full"}
+          extraClasses={"w-[200px] max-md:w-full"}
           url={url}
         />
       ) : (

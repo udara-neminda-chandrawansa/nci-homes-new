@@ -118,7 +118,7 @@ function Footer() {
               <div
                 className={`flex max-[992px]:flex-col transition-all items-center duration-300 overflow-hidden`}
               >
-                <p className="text-xs font-semibold uppercase g-font-1 line-height-lg max-[992px]:text-center">
+                <p className="text-xs font-semibold uppercase g-font-1 line-height-lg max-[992px]:text-justify">
                   With over 22 years of extensive experience, we have
                   established ourselves as a trusted leader in the fields of
                   building and home construction, planning, designing,
@@ -141,7 +141,7 @@ function Footer() {
                   <img src={logo} alt="logo" className="h-20 hidden"></img>
 
                   {/*social media icons*/}
-                  <div className="w-fit flex gap-6 items-center max-[992px]:pl-4 max-md:justify-end">
+                  <div className="w-fit flex gap-6 items-center max-md:justify-end">
                     <p className="max-sm:hidden">Follow Us On</p>
                     <a
                       href="https://www.facebook.com/ncihomespvtltd/"

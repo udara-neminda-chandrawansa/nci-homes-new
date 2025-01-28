@@ -23,7 +23,7 @@ function HomeSection1() {
               "Precise calculations for your property's floor area, ensuring accurate utilization and planning of every square foot."
             }
             cardImage={card_1}
-            extraClasses={"h-[55dvh] "}
+            extraClasses={"h-fit "}
             btnText={"Read More"}
             url="/services"
           />
@@ -36,7 +36,7 @@ function HomeSection1() {
               "Tailored loan options to make your dream home affordable and within reach with ease."
             }
             cardImage={card_2}
-            extraClasses={"h-[55dvh]"}
+            extraClasses={"h-fit"}
             btnText={"Read More"}
             url="/services"
           />
@@ -49,7 +49,7 @@ function HomeSection1() {
               "Hassle-free assistance in securing necessary approvals to streamline your construction and renovation projects."
             }
             cardImage={card_3}
-            extraClasses={"h-[55dvh]"}
+            extraClasses={"h-fit"}
             btnText={"Read More"}
             url="/services"
           />
@@ -62,7 +62,7 @@ function HomeSection1() {
               "Transform your outdoor spaces with innovative designs or refreshing existing landscapes for a stunning environment."
             }
             cardImage={card_4}
-            extraClasses={"h-[55dvh]"}
+            extraClasses={"h-fit"}
             btnText={"Read More"}
             url="/services"
           />
