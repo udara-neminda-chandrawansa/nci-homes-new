@@ -73,7 +73,7 @@ export default function Nav({
             </Link>
           </li>
           <li>
-            <Link href="/projects/1">
+            <Link href="/projects/2">
               <p className="p-1 underline-offset-[20px] hover:underline">
                 Projects
               </p>{" "}

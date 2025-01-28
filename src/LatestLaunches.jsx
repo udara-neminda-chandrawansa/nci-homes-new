@@ -283,7 +283,7 @@ export default function Projects({ projType }) {
               <span
                 id="launchSpan-1"
                 onClick={() => handleLaunchFilter(1)} // Wrap in an arrow function to call only on click
-                className="launch-span cursor-pointer flex justify-center text-white bg-blue-900 border-[1px] border-gray-400 uppercase g-font-2 font-semibold text-xs tracking-widest p-3 px-8 rounded-full min-w-[100px]"
+                className="launch-span cursor-pointer hidden justify-center text-white bg-blue-900 border-[1px] border-gray-400 uppercase g-font-2 font-semibold text-xs tracking-widest p-3 px-8 rounded-full min-w-[100px]"
               >
                 All
               </span>
