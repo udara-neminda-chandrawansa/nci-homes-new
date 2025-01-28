@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 
 // image galleries of completed projects
+const katu_com_hotel_grid = import.meta.glob(
+  "../images/projects/completed/katugastota_hotel/*.{png,jpg,jpeg,svg}"
+);
 const hara_hou_grid = import.meta.glob(
   "../images/projects/completed/haragama_housing/*.{png,jpg,jpeg,svg}"
 );
@@ -103,6 +106,7 @@ import mapanawathura from "../images/projects/ongoing/mapanawathura.jpg";
 
 export default function ProjectImageLoader({ neededProjectName }) {
   // completed proj gallery array (for modal)
+  const [katuComHotelImages, setKatuComHotelImages] = useState([]);
   const [haraHouseImages, setHaraHouseImages] = useState([]);
   const [nuwEliyaHouseImages, setNuwEliyaHouseImages] = useState([]);
   const [kandyHouseImages, setKandyHouseImages] = useState([]);
@@ -145,6 +149,19 @@ export default function ProjectImageLoader({ neededProjectName }) {
 
   // use effect for auto loading *
   useEffect(() => {
+
+    // Load katu_com_hotel_grid images
+    const loadKatugastotaComHotelImages = async () => {
+      const resolvedImages = await Promise.all(
+        Object.keys(katu_com_hotel_grid).map((key) =>
+          katu_com_hotel_grid[key]()
+        )
+      );
+      setKatuComHotelImages(resolvedImages.map((mod) => mod.default));
+    };
+
+    loadKatugastotaComHotelImages();
+
     // Load katugastota_hotel_grid images
     const loadKatugastotaHotelImages = async () => {
       const resolvedImages = await Promise.all(
@@ -445,6 +462,8 @@ export default function ProjectImageLoader({ neededProjectName }) {
   }, []);
 
   switch (neededProjectName) {
+    case "katuComHotelImages":
+      return katuComHotelImages;
     case "haraHouseImages":
       return haraHouseImages;
     case "nuwEliyaHouseImages":
