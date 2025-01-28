@@ -13,7 +13,7 @@ function HomeSection1() {
         <div className="w-[120px] border-t-[1px] border-t-gray-400"></div>
       </span>
       <span className="w-full overflow-x-scroll cursor-grab no-scrollbar">
-        <span className="grid grid-cols-4 gap-3 max-lg:grid-cols-2 max-md:grid-cols-1">
+        <span className="grid grid-cols-4 gap-1 max-lg:grid-cols-2 max-md:grid-cols-1">
           <CardType1
             cardHeader={"Floor area counting"}
             cardHeaderClasses={
@@ -54,7 +54,7 @@ function HomeSection1() {
             url="/services"
           />
           <CardType1
-            cardHeader={"Landscaping with new and old designs"}
+            cardHeader={"Landscaping"}
             cardHeaderClasses={
               "text-4xl max-xl:text-3xl max-lg:text-3xl max-md:text-xl max-sm:text-lg"
             }

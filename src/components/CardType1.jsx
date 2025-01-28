@@ -17,7 +17,7 @@ function CardType1({
     <div
       className={`flex flex-col items-center justify-between ${extraClasses}`}
     >
-      <span className={`w-full overflow-hidden h-1/2 group`}>
+      <span className={`w-full overflow-hidden h-[60%] group`}>
         <img
           className={`w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110 ${cardImageClasses}`}
           src={cardImage}

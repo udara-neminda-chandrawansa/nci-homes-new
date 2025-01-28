@@ -21,9 +21,9 @@ const Carousel = ({ neededProjectName }) => {
   };
 
   return (
-    <div className="relative w-full h-full max-w-4xl mx-auto">
+    <div className="relative w-full h-[300px] max-lg:h-[250px] max-w-4xl mx-auto">
       {/* Image container */}
-      <div className="relative overflow-hidden h-36 max-lg:h-64">
+      <div className="relative overflow-hidden h-full">
         {images.map((image, index) => (
           <div
             key={`${image}-${index}`}

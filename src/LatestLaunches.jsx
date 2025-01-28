@@ -306,7 +306,7 @@ export default function Projects({ projType }) {
         </div>
       </div>
       {/*card container*/}
-      <div className="grid w-full grid-cols-4 gap-4 px-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-lg:h-full">
+      <div className="grid w-full grid-cols-4 gap-1 px-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-lg:h-full">
         {/*completed map*/}
         {completedProjects.map((project, index) => (
           <div
