@@ -216,7 +216,7 @@ function Footer() {
                 Address:
               </li>
               <li>NCI BUILDING</li>
-              <li className="text-left ">No. 381 A,Katugastota Road,Kandy</li>
+              <li className="text-left ">No:381A, Katugastota Road, Kandy</li>
               <li className="mt-3">Phone No:</li>
               <li className="flex items-center gap-3 transition-all delay-75 hover:text-blue-300">
                 <svg
