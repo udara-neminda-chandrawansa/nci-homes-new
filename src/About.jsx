@@ -218,7 +218,7 @@ export default function About() {
             Choose NCI Homes
           </h1>
           <div className="text-lg text-gray-600 g-font-1">
-            <ul className='ml-6 list-disc list-outside marker:text-green'>
+            <ul className="ml-6 list-disc list-outside marker:text-green">
               <li>
                 We offer you the most competitive rates of the current market.
                 Brand new houses are available from 3.5 million onwards.
@@ -259,9 +259,7 @@ export default function About() {
               cardUrl={"https://www.google.com"}
               cardText1={""}
               cardImage={lotus_t}
-              cardImageMd={
-                "https://cdn.properties.emaar.com/wp-content/uploads/2020/06/Turkey-Large-NEW-706x385.jpg"
-              }
+              cardImageMd={lotus_t}
               blackLinePClasses={"hidden"}
             />
             <CardType2
@@ -269,6 +267,13 @@ export default function About() {
               cardText1={""}
               cardImage={devi_p}
               cardImageMd={devi_p}
+              blackLinePClasses={"hidden"}
+            />
+            <CardType2
+              cardUrl={"https://www.google.com"}
+              cardText1={""}
+              cardImage={lotus_t_2}
+              cardImageMd={lotus_t_2}
               blackLinePClasses={"hidden"}
             />
           </div>
